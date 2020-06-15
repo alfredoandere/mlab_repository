@@ -1,0 +1,925 @@
+2020-06-15 18:58:24.989001 (MainThread): Running with dbt=0.17.0
+2020-06-15 18:58:25.235071 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-06-15 18:58:25.235604 (MainThread): Tracking: tracking
+2020-06-15 18:58:25.241653 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e49da09c240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e49db3376d8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e49da09c550>]}
+2020-06-15 18:58:25.301345 (MainThread): Partial parsing not enabled
+2020-06-15 18:58:25.303922 (MainThread): Parsing macros/core.sql
+2020-06-15 18:58:25.311739 (MainThread): Parsing macros/adapters/common.sql
+2020-06-15 18:58:25.368631 (MainThread): Parsing macros/etc/datetime.sql
+2020-06-15 18:58:25.378096 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-06-15 18:58:25.379250 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-06-15 18:58:25.381026 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-06-15 18:58:25.383148 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-06-15 18:58:25.384893 (MainThread): Parsing macros/etc/query.sql
+2020-06-15 18:58:25.386092 (MainThread): Parsing macros/materializations/helpers.sql
+2020-06-15 18:58:25.394741 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-06-15 18:58:25.409774 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-06-15 18:58:25.411858 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-06-15 18:58:25.418479 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-06-15 18:58:25.449229 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-15 18:58:25.478953 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-15 18:58:25.481055 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-15 18:58:25.498763 (MainThread): Parsing macros/materializations/table/table.sql
+2020-06-15 18:58:25.505913 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-15 18:58:25.511289 (MainThread): Parsing macros/materializations/view/view.sql
+2020-06-15 18:58:25.517974 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-06-15 18:58:25.520452 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-06-15 18:58:25.521818 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-06-15 18:58:25.523204 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-06-15 18:58:25.524948 (MainThread): Parsing macros/adapters.sql
+2020-06-15 18:58:25.543154 (MainThread): Parsing macros/catalog.sql
+2020-06-15 18:58:25.549566 (MainThread): Parsing macros/etc.sql
+2020-06-15 18:58:25.550373 (MainThread): Parsing macros/materializations/incremental.sql
+2020-06-15 18:58:25.564121 (MainThread): Parsing macros/materializations/seed.sql
+2020-06-15 18:58:25.566379 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-06-15 18:58:25.568472 (MainThread): Parsing macros/materializations/table.sql
+2020-06-15 18:58:25.579334 (MainThread): Parsing macros/materializations/view.sql
+2020-06-15 18:58:25.603747 (MainThread): Partial parsing not enabled
+2020-06-15 18:58:25.643153 (MainThread): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 18:58:25.643336 (MainThread): Opening a new connection, currently in state init
+2020-06-15 18:58:25.672551 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 18:58:25.672747 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 18:58:25.684769 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 18:58:25.684951 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 18:58:25.890327 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-06-15 18:58:25.891302 (MainThread): 
+2020-06-15 18:58:25.891912 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 18:58:25.892068 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 18:58:25.896889 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_mlab-recreate".
+2020-06-15 18:58:25.897099 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-06-15 18:58:25.898553 (MainThread): Connection 'master' was properly closed.
+2020-06-15 18:58:25.898686 (MainThread): Connection 'list_mlab-recreate' was properly closed.
+2020-06-15 18:58:25.898888 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e49d9e77c18>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e49d9ec3208>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e49d9ec3160>]}
+2020-06-15 18:58:25.899099 (MainThread): Flushing usage events
+2020-06-15 18:58:26.330274 (MainThread): Encountered an error:
+2020-06-15 18:58:26.333025 (MainThread): [Errno 2] No such file or directory: '~/mlab-recreate-ce1aa5d60be4.json'
+2020-06-15 18:58:26.348462 (MainThread): Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 81, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 212, in run_from_args
+    results = task.run()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 409, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 369, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/run.py", line 202, in before_run
+    super().before_run(adapter, selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 355, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 489, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/lib/python3.7/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/usr/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 470, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/impl.py", line 156, in list_schemas
+    client = conn.handle
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/contracts/connection.py", line 69, in handle
+    self._handle.resolve(self)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/contracts/connection.py", line 90, in resolve
+    return self.opener(connection)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 165, in open
+    handle = cls.get_bigquery_client(connection.credentials)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 147, in get_bigquery_client
+    creds = cls.get_bigquery_credentials(profile_credentials)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 135, in get_bigquery_credentials
+    return creds.from_service_account_file(keyfile, scopes=cls.SCOPE)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/oauth2/service_account.py", line 226, in from_service_account_file
+    filename, require=["client_email", "token_uri"]
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/auth/_service_account_info.py", line 72, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: '~/mlab-recreate-ce1aa5d60be4.json'
+
+2020-06-15 18:59:41.233687 (MainThread): Running with dbt=0.17.0
+2020-06-15 18:59:41.486687 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-06-15 18:59:41.487687 (MainThread): Tracking: tracking
+2020-06-15 18:59:41.493687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f245c164240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f245d3fc710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f245c1644e0>]}
+2020-06-15 18:59:41.553687 (MainThread): Partial parsing not enabled
+2020-06-15 18:59:41.555687 (MainThread): Parsing macros/core.sql
+2020-06-15 18:59:41.563687 (MainThread): Parsing macros/adapters/common.sql
+2020-06-15 18:59:41.622687 (MainThread): Parsing macros/etc/datetime.sql
+2020-06-15 18:59:41.634687 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-06-15 18:59:41.636687 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-06-15 18:59:41.638687 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-06-15 18:59:41.640687 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-06-15 18:59:41.642687 (MainThread): Parsing macros/etc/query.sql
+2020-06-15 18:59:41.643687 (MainThread): Parsing macros/materializations/helpers.sql
+2020-06-15 18:59:41.652687 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-06-15 18:59:41.667687 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-06-15 18:59:41.669687 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-06-15 18:59:41.675687 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-06-15 18:59:41.699687 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-15 18:59:41.729687 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-15 18:59:41.731687 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-15 18:59:41.748687 (MainThread): Parsing macros/materializations/table/table.sql
+2020-06-15 18:59:41.755687 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-15 18:59:41.760687 (MainThread): Parsing macros/materializations/view/view.sql
+2020-06-15 18:59:41.769687 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-06-15 18:59:41.771687 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-06-15 18:59:41.773687 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-06-15 18:59:41.774687 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-06-15 18:59:41.776687 (MainThread): Parsing macros/adapters.sql
+2020-06-15 18:59:41.794687 (MainThread): Parsing macros/catalog.sql
+2020-06-15 18:59:41.800687 (MainThread): Parsing macros/etc.sql
+2020-06-15 18:59:41.801687 (MainThread): Parsing macros/materializations/incremental.sql
+2020-06-15 18:59:41.815687 (MainThread): Parsing macros/materializations/seed.sql
+2020-06-15 18:59:41.817687 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-06-15 18:59:41.820687 (MainThread): Parsing macros/materializations/table.sql
+2020-06-15 18:59:41.830687 (MainThread): Parsing macros/materializations/view.sql
+2020-06-15 18:59:41.853687 (MainThread): Partial parsing not enabled
+2020-06-15 18:59:41.887687 (MainThread): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 18:59:41.887687 (MainThread): Opening a new connection, currently in state init
+2020-06-15 18:59:41.915687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 18:59:41.916687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 18:59:41.927687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 18:59:41.927687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 18:59:42.122687 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-06-15 18:59:42.123687 (MainThread): 
+2020-06-15 18:59:42.124687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 18:59:42.124687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 18:59:42.130687 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_mlab-recreate".
+2020-06-15 18:59:42.130687 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-06-15 18:59:42.732687 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "create_mlab-recreate_mlab-recreate:dbt_pipeline_deposit".
+2020-06-15 18:59:42.733687 (ThreadPoolExecutor-0_0): Re-using an available connection from the pool (formerly list_mlab-recreate).
+2020-06-15 18:59:42.734687 (ThreadPoolExecutor-0_0): Creating schema "mlab-recreate.mlab-recreate:dbt_pipeline_deposit".
+2020-06-15 18:59:42.735687 (ThreadPoolExecutor-0_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 18:59:42.938687 (MainThread): Connection 'master' was properly closed.
+2020-06-15 18:59:42.938687 (MainThread): Connection 'create_mlab-recreate_mlab-recreate:dbt_pipeline_deposit' was left open.
+2020-06-15 18:59:42.939687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f245bf30e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f245bf30d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f245bf30e80>]}
+2020-06-15 18:59:42.941687 (MainThread): Flushing usage events
+2020-06-15 18:59:43.385687 (MainThread): Encountered an error:
+2020-06-15 18:59:43.390687 (MainThread): Database Error
+  Invalid dataset ID "mlab-recreate:dbt_pipeline_deposit". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+2020-06-15 18:59:43.410687 (MainThread): Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 84, in exception_handler
+    yield
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 363, in _retry_and_handle
+    deadline=None)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 344, in fn
+    return client.create_dataset(dataset, exists_ok=True)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 461, in create_dataset
+    retry, method="POST", path=path, data=data, timeout=timeout
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 556, in _call_api
+    return call()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/api_core/retry.py", line 286, in retry_wrapped_func
+    on_error=on_error,
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/cloud/_http.py", line 423, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.BadRequest: 400 POST https://bigquery.googleapis.com/bigquery/v2/projects/mlab-recreate/datasets: Invalid dataset ID "mlab-recreate:dbt_pipeline_deposit". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 81, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 212, in run_from_args
+    results = task.run()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 409, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 369, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/run.py", line 202, in before_run
+    super().before_run(adapter, selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 355, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 509, in create_schemas
+    create_future.result()
+  File "/usr/lib/python3.7/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/usr/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 478, in create_schema
+    adapter.create_schema(relation)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/impl.py", line 267, in create_schema
+    self.connections.create_dataset(database, schema)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 345, in create_dataset
+    self._retry_and_handle(msg='create dataset', conn=conn, fn=fn)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 363, in _retry_and_handle
+    deadline=None)
+  File "/usr/lib/python3.7/contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 88, in exception_handler
+    self.handle_error(e, message)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 76, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error
+  Invalid dataset ID "mlab-recreate:dbt_pipeline_deposit". Dataset IDs must be alphanumeric (plus underscores and dashes) and must be at most 1024 characters long.
+
+2020-06-15 19:00:24.746687 (MainThread): Running with dbt=0.17.0
+2020-06-15 19:00:25.074687 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-06-15 19:00:25.075687 (MainThread): Tracking: tracking
+2020-06-15 19:00:25.080687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4bb491a240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4bb5bb44e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4bb491a4e0>]}
+2020-06-15 19:00:25.141687 (MainThread): Partial parsing not enabled
+2020-06-15 19:00:25.144687 (MainThread): Parsing macros/core.sql
+2020-06-15 19:00:25.153687 (MainThread): Parsing macros/adapters/common.sql
+2020-06-15 19:00:25.210687 (MainThread): Parsing macros/etc/datetime.sql
+2020-06-15 19:00:25.220687 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-06-15 19:00:25.221687 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-06-15 19:00:25.223687 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-06-15 19:00:25.225687 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-06-15 19:00:25.227687 (MainThread): Parsing macros/etc/query.sql
+2020-06-15 19:00:25.228687 (MainThread): Parsing macros/materializations/helpers.sql
+2020-06-15 19:00:25.236687 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-06-15 19:00:25.251687 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-06-15 19:00:25.253687 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-06-15 19:00:25.260687 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-06-15 19:00:25.282687 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-15 19:00:25.313687 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-15 19:00:25.315687 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-15 19:00:25.334687 (MainThread): Parsing macros/materializations/table/table.sql
+2020-06-15 19:00:25.341687 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-15 19:00:25.346687 (MainThread): Parsing macros/materializations/view/view.sql
+2020-06-15 19:00:25.353687 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-06-15 19:00:25.356687 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-06-15 19:00:25.357687 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-06-15 19:00:25.358687 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-06-15 19:00:25.359687 (MainThread): Parsing macros/adapters.sql
+2020-06-15 19:00:25.377687 (MainThread): Parsing macros/catalog.sql
+2020-06-15 19:00:25.385687 (MainThread): Parsing macros/etc.sql
+2020-06-15 19:00:25.386687 (MainThread): Parsing macros/materializations/incremental.sql
+2020-06-15 19:00:25.400687 (MainThread): Parsing macros/materializations/seed.sql
+2020-06-15 19:00:25.403687 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-06-15 19:00:25.405687 (MainThread): Parsing macros/materializations/table.sql
+2020-06-15 19:00:25.416687 (MainThread): Parsing macros/materializations/view.sql
+2020-06-15 19:00:25.446687 (MainThread): Partial parsing not enabled
+2020-06-15 19:00:25.482687 (MainThread): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 19:00:25.482687 (MainThread): Opening a new connection, currently in state init
+2020-06-15 19:00:25.513687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 19:00:25.513687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 19:00:25.525687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 19:00:25.525687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 19:00:25.736687 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-06-15 19:00:25.738687 (MainThread): 
+2020-06-15 19:00:25.739687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 19:00:25.739687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 19:00:25.744687 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_mlab-recreate".
+2020-06-15 19:00:25.744687 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-06-15 19:00:26.388687 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_mlab-recreate_dbt_pipeline_deposit".
+2020-06-15 19:00:26.389687 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_mlab-recreate).
+2020-06-15 19:00:26.389687 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 19:00:26.571687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 19:00:26.572687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 19:00:26.573687 (MainThread): 12:00:26 | Concurrency: 1 threads (target='dev')
+2020-06-15 19:00:26.574687 (MainThread): 12:00:26 | 
+2020-06-15 19:00:26.590687 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2020-06-15 19:00:26.590687 (Thread-1): 12:00:26 | 1 of 3 START table model dbt_pipeline_deposit.my_first_dbt_model..... [RUN]
+2020-06-15 19:00:26.595687 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 19:00:26.595687 (Thread-1): Re-using an available connection from the pool (formerly list_mlab-recreate_dbt_pipeline_deposit).
+2020-06-15 19:00:26.595687 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2020-06-15 19:00:26.595687 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2020-06-15 19:00:26.595687 (Thread-1): finished collecting timing info
+2020-06-15 19:00:26.595687 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_first_dbt_model"
+2020-06-15 19:00:26.595687 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+
+  create or replace table `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+    
+2020-06-15 19:00:29.418687 (Thread-1): finished collecting timing info
+2020-06-15 19:00:29.418687 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2135ec44-6ba4-410d-9b25-c479734aabdc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4bb466be10>]}
+2020-06-15 19:00:29.418687 (Thread-1): 12:00:29 | 1 of 3 OK created table model dbt_pipeline_deposit.my_first_dbt_model [CREATE TABLE (2) in 2.83s]
+2020-06-15 19:00:29.433687 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2020-06-15 19:00:29.433687 (Thread-1): Began running node model.my_new_project.sample
+2020-06-15 19:00:29.433687 (Thread-1): 12:00:29 | 2 of 3 START table model dbt_pipeline_deposit.sample................. [RUN]
+2020-06-15 19:00:29.436687 (Thread-1): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 19:00:29.436687 (Thread-1): Re-using an available connection from the pool (formerly model.my_new_project.my_first_dbt_model).
+2020-06-15 19:00:29.436687 (Thread-1): Compiling model.my_new_project.sample
+2020-06-15 19:00:29.440687 (Thread-1): Writing injected SQL for node "model.my_new_project.sample"
+2020-06-15 19:00:29.440687 (Thread-1): finished collecting timing info
+2020-06-15 19:00:29.440687 (Thread-1): Writing runtime SQL for node "model.my_new_project.sample"
+2020-06-15 19:00:29.440687 (Thread-1): On model.my_new_project.sample: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.sample"} */
+
+
+  create or replace table `mlab-recreate`.`dbt_pipeline_deposit`.`sample`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT *
+FROM 'bigquery-public-data.stackoverflow.posts_questions'
+ORDER BY view_count DESC
+LIMIT 1
+  );
+    
+2020-06-15 19:00:29.725687 (Thread-1): finished collecting timing info
+2020-06-15 19:00:29.725687 (Thread-1): Database Error in model sample (models/sample.sql)
+  Syntax error: Unexpected string literal 'bigquery-public-data.stackoverflow.posts_questions' at [11:6]
+  compiled SQL at target/run/my_new_project/models/sample.sql
+Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 84, in exception_handler
+    yield
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 363, in _retry_and_handle
+    deadline=None)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 225, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 352, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/cloud/bigquery/job.py", line 3196, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/cloud/bigquery/job.py", line 818, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/api_core/future/polling.py", line 127, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Syntax error: Unexpected string literal 'bigquery-public-data.stackoverflow.posts_questions' at [11:6]
+
+(job ID: 8c029fdd-3b58-4b42-909d-d352facadde1)
+
+                                                          -----Query Job SQL Follows-----                                                           
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.sample"} */
+   2:
+   3:
+   4:  create or replace table `mlab-recreate`.`dbt_pipeline_deposit`.`sample`
+   5:  
+   6:  
+   7:  OPTIONS()
+   8:  as (
+   9:    
+  10:SELECT *
+  11:FROM 'bigquery-public-data.stackoverflow.posts_questions'
+  12:ORDER BY view_count DESC
+  13:LIMIT 1
+  14:  );
+  15:    
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 228, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 171, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 273, in run
+    return self.execute(compiled_node, manifest)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 459, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 128, in macro
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 296, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 226, in call_macro
+    return macro(*args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/base/impl.py", line 228, in execute
+    fetch=fetch
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 234, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 227, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 363, in _retry_and_handle
+    deadline=None)
+  File "/usr/lib/python3.7/contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 88, in exception_handler
+    self.handle_error(e, message)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 76, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error in model sample (models/sample.sql)
+  Syntax error: Unexpected string literal 'bigquery-public-data.stackoverflow.posts_questions' at [11:6]
+  compiled SQL at target/run/my_new_project/models/sample.sql
+2020-06-15 19:00:29.725687 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2135ec44-6ba4-410d-9b25-c479734aabdc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4bb466be10>]}
+2020-06-15 19:00:29.725687 (Thread-1): 12:00:29 | 2 of 3 ERROR creating table model dbt_pipeline_deposit.sample........ [ERROR in 0.29s]
+2020-06-15 19:00:29.754687 (Thread-1): Finished running node model.my_new_project.sample
+2020-06-15 19:00:29.754687 (Thread-1): Began running node model.my_new_project.my_second_dbt_model
+2020-06-15 19:00:29.758687 (Thread-1): 12:00:29 | 3 of 3 START view model dbt_pipeline_deposit.my_second_dbt_model..... [RUN]
+2020-06-15 19:00:29.758687 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 19:00:29.758687 (Thread-1): Re-using an available connection from the pool (formerly model.my_new_project.sample).
+2020-06-15 19:00:29.758687 (Thread-1): Compiling model.my_new_project.my_second_dbt_model
+2020-06-15 19:00:29.779687 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+2020-06-15 19:00:29.779687 (Thread-1): finished collecting timing info
+2020-06-15 19:00:29.805687 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_second_dbt_model"
+2020-06-15 19:00:29.807687 (Thread-1): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+
+
+  create or replace view `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+where id = 1;
+
+
+2020-06-15 19:00:30.625687 (Thread-1): finished collecting timing info
+2020-06-15 19:00:30.625687 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2135ec44-6ba4-410d-9b25-c479734aabdc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4bb247a550>]}
+2020-06-15 19:00:30.625687 (Thread-1): 12:00:30 | 3 of 3 OK created view model dbt_pipeline_deposit.my_second_dbt_model [CREATE VIEW in 0.87s]
+2020-06-15 19:00:30.625687 (Thread-1): Finished running node model.my_new_project.my_second_dbt_model
+2020-06-15 19:00:30.713687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 19:00:30.713687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 19:00:30.714687 (MainThread): 12:00:30 | 
+2020-06-15 19:00:30.714687 (MainThread): 12:00:30 | Finished running 2 table models, 1 view model in 4.98s.
+2020-06-15 19:00:30.714687 (MainThread): Connection 'master' was properly closed.
+2020-06-15 19:00:30.714687 (MainThread): Connection 'model.my_new_project.my_second_dbt_model' was left open.
+2020-06-15 19:00:30.722687 (MainThread): 
+2020-06-15 19:00:30.722687 (MainThread): Completed with 1 error and 0 warnings:
+2020-06-15 19:00:30.729687 (MainThread): 
+2020-06-15 19:00:30.729687 (MainThread): Database Error in model sample (models/sample.sql)
+2020-06-15 19:00:30.729687 (MainThread):   Syntax error: Unexpected string literal 'bigquery-public-data.stackoverflow.posts_questions' at [11:6]
+2020-06-15 19:00:30.729687 (MainThread):   compiled SQL at target/run/my_new_project/models/sample.sql
+2020-06-15 19:00:30.729687 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+2020-06-15 19:00:30.729687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4bb4617438>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4bb46179b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c4bb4617710>]}
+2020-06-15 19:00:30.729687 (MainThread): Flushing usage events
+2020-06-15 19:01:52.976687 (MainThread): Running with dbt=0.17.0
+2020-06-15 19:01:52.976687 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-06-15 19:01:52.976687 (MainThread): Tracking: tracking
+2020-06-15 19:01:52.976687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc74084d278>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc741ae7518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc74084d518>]}
+2020-06-15 19:01:52.976687 (MainThread): Partial parsing not enabled
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/core.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/adapters/common.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/etc/datetime.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/etc/query.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/helpers.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/table/table.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/view/view.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/adapters.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/catalog.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/etc.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/incremental.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/seed.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/table.sql
+2020-06-15 19:01:52.976687 (MainThread): Parsing macros/materializations/view.sql
+2020-06-15 19:01:52.976687 (MainThread): Partial parsing not enabled
+2020-06-15 19:01:52.976687 (MainThread): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 19:01:52.976687 (MainThread): Opening a new connection, currently in state init
+2020-06-15 19:01:52.976687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 19:01:52.976687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 19:01:52.976687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 19:01:52.976687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 19:01:52.976687 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-06-15 19:01:52.976687 (MainThread): 
+2020-06-15 19:01:52.976687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 19:01:52.976687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 19:01:52.976687 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_mlab-recreate".
+2020-06-15 19:01:52.976687 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-06-15 19:01:56.317687 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_mlab-recreate_dbt_pipeline_deposit".
+2020-06-15 19:01:56.318687 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_mlab-recreate).
+2020-06-15 19:01:56.319687 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 19:01:56.576687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 19:01:56.577687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 19:01:56.578687 (MainThread): 12:01:56 | Concurrency: 1 threads (target='dev')
+2020-06-15 19:01:56.578687 (MainThread): 12:01:56 | 
+2020-06-15 19:01:56.598687 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2020-06-15 19:01:56.601687 (Thread-1): 12:01:56 | 1 of 3 START table model dbt_pipeline_deposit.my_first_dbt_model..... [RUN]
+2020-06-15 19:01:56.605687 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 19:01:56.605687 (Thread-1): Re-using an available connection from the pool (formerly list_mlab-recreate_dbt_pipeline_deposit).
+2020-06-15 19:01:56.605687 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2020-06-15 19:01:56.605687 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2020-06-15 19:01:56.605687 (Thread-1): finished collecting timing info
+2020-06-15 19:01:56.605687 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 19:01:56.970687 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_first_dbt_model"
+2020-06-15 19:01:57.027687 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+
+  create or replace table `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+    
+2020-06-15 19:01:59.735687 (Thread-1): finished collecting timing info
+2020-06-15 19:01:59.735687 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'feaa7465-4d6d-41ea-8acc-a867388f9a48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7405aee10>]}
+2020-06-15 19:01:59.735687 (Thread-1): 12:01:59 | 1 of 3 OK created table model dbt_pipeline_deposit.my_first_dbt_model [CREATE TABLE (2) in 3.13s]
+2020-06-15 19:01:59.745687 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2020-06-15 19:01:59.746687 (Thread-1): Began running node model.my_new_project.sample
+2020-06-15 19:01:59.747687 (Thread-1): 12:01:59 | 2 of 3 START table model dbt_pipeline_deposit.sample................. [RUN]
+2020-06-15 19:01:59.750687 (Thread-1): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 19:01:59.750687 (Thread-1): Re-using an available connection from the pool (formerly model.my_new_project.my_first_dbt_model).
+2020-06-15 19:01:59.750687 (Thread-1): Compiling model.my_new_project.sample
+2020-06-15 19:01:59.759687 (Thread-1): Writing injected SQL for node "model.my_new_project.sample"
+2020-06-15 19:01:59.759687 (Thread-1): finished collecting timing info
+2020-06-15 19:01:59.759687 (Thread-1): Writing runtime SQL for node "model.my_new_project.sample"
+2020-06-15 19:01:59.759687 (Thread-1): On model.my_new_project.sample: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.sample"} */
+
+
+  create or replace table `mlab-recreate`.`dbt_pipeline_deposit`.`sample`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT *
+FROM `bigquery-public-data.stackoverflow.posts_questions`
+ORDER BY view_count DESC
+LIMIT 1
+  );
+    
+2020-06-15 19:02:08.645687 (Thread-1): finished collecting timing info
+2020-06-15 19:02:08.645687 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'feaa7465-4d6d-41ea-8acc-a867388f9a48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7406758d0>]}
+2020-06-15 19:02:08.645687 (Thread-1): 12:02:08 | 2 of 3 OK created table model dbt_pipeline_deposit.sample............ [CREATE TABLE (1) in 8.90s]
+2020-06-15 19:02:08.645687 (Thread-1): Finished running node model.my_new_project.sample
+2020-06-15 19:02:08.648687 (Thread-1): Began running node model.my_new_project.my_second_dbt_model
+2020-06-15 19:02:08.648687 (Thread-1): 12:02:08 | 3 of 3 START view model dbt_pipeline_deposit.my_second_dbt_model..... [RUN]
+2020-06-15 19:02:08.651687 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 19:02:08.651687 (Thread-1): Re-using an available connection from the pool (formerly model.my_new_project.sample).
+2020-06-15 19:02:08.651687 (Thread-1): Compiling model.my_new_project.my_second_dbt_model
+2020-06-15 19:02:08.660687 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+2020-06-15 19:02:08.662687 (Thread-1): finished collecting timing info
+2020-06-15 19:02:08.662687 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_second_dbt_model"
+2020-06-15 19:02:08.662687 (Thread-1): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+
+
+  create or replace view `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+where id = 1;
+
+
+2020-06-15 19:02:09.486687 (Thread-1): finished collecting timing info
+2020-06-15 19:02:09.486687 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'feaa7465-4d6d-41ea-8acc-a867388f9a48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7405ab438>]}
+2020-06-15 19:02:09.486687 (Thread-1): 12:02:09 | 3 of 3 OK created view model dbt_pipeline_deposit.my_second_dbt_model [CREATE VIEW in 0.84s]
+2020-06-15 19:02:09.515687 (Thread-1): Finished running node model.my_new_project.my_second_dbt_model
+2020-06-15 19:02:09.569687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 19:02:09.569687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 19:02:09.569687 (MainThread): 12:02:09 | 
+2020-06-15 19:02:09.570687 (MainThread): 12:02:09 | Finished running 2 table models, 1 view model in 16.59s.
+2020-06-15 19:02:09.570687 (MainThread): Connection 'master' was properly closed.
+2020-06-15 19:02:09.570687 (MainThread): Connection 'model.my_new_project.my_second_dbt_model' was left open.
+2020-06-15 19:02:09.582687 (MainThread): 
+2020-06-15 19:02:09.583687 (MainThread): Completed successfully
+2020-06-15 19:02:09.583687 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2020-06-15 19:02:09.584687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc740659470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc74064e7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc740648358>]}
+2020-06-15 19:02:09.584687 (MainThread): Flushing usage events
+2020-06-15 22:16:35.988687 (MainThread): Running with dbt=0.17.0
+2020-06-15 22:16:36.234687 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-06-15 22:16:36.234687 (MainThread): Tracking: tracking
+2020-06-15 22:16:36.234687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd160e6d240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd1621076a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd160e6d4e0>]}
+2020-06-15 22:16:36.234687 (MainThread): Partial parsing not enabled
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/core.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/adapters/common.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/etc/datetime.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/etc/query.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/helpers.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/table/table.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/view/view.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/adapters.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/catalog.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/etc.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/incremental.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/seed.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/table.sql
+2020-06-15 22:16:36.234687 (MainThread): Parsing macros/materializations/view.sql
+2020-06-15 22:16:36.234687 (MainThread): Partial parsing not enabled
+2020-06-15 22:16:36.234687 (MainThread): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 22:16:36.234687 (MainThread): Opening a new connection, currently in state init
+2020-06-15 22:16:36.234687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 22:16:36.234687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:16:36.234687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 22:16:36.234687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:16:36.234687 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-06-15 22:16:36.234687 (MainThread): 
+2020-06-15 22:16:36.234687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 22:16:36.234687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:16:36.234687 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_mlab-recreate".
+2020-06-15 22:16:36.234687 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-06-15 22:16:36.234687 (MainThread): Connection 'master' was properly closed.
+2020-06-15 22:16:36.234687 (MainThread): Connection 'list_mlab-recreate' was properly closed.
+2020-06-15 22:16:36.234687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd160c41c18>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd160c95c18>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cd160c95278>]}
+2020-06-15 22:16:36.234687 (MainThread): Flushing usage events
+2020-06-15 22:16:36.234687 (MainThread): Encountered an error:
+2020-06-15 22:16:36.234687 (MainThread): [Errno 2] No such file or directory: '../mlab-recreate-ce1aa5d60be4.json'
+2020-06-15 22:16:36.234687 (MainThread): Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 81, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 212, in run_from_args
+    results = task.run()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 409, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 369, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/run.py", line 202, in before_run
+    super().before_run(adapter, selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 355, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 489, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/usr/lib/python3.7/concurrent/futures/_base.py", line 425, in result
+    return self.__get_result()
+  File "/usr/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/runnable.py", line 470, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/impl.py", line 156, in list_schemas
+    client = conn.handle
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/contracts/connection.py", line 69, in handle
+    self._handle.resolve(self)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/contracts/connection.py", line 90, in resolve
+    return self.opener(connection)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 165, in open
+    handle = cls.get_bigquery_client(connection.credentials)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 147, in get_bigquery_client
+    creds = cls.get_bigquery_credentials(profile_credentials)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 135, in get_bigquery_credentials
+    return creds.from_service_account_file(keyfile, scopes=cls.SCOPE)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/oauth2/service_account.py", line 226, in from_service_account_file
+    filename, require=["client_email", "token_uri"]
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/google/auth/_service_account_info.py", line 72, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: '../mlab-recreate-ce1aa5d60be4.json'
+
+2020-06-15 22:23:40.688687 (MainThread): Running with dbt=0.17.0
+2020-06-15 22:23:40.688687 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-06-15 22:23:40.688687 (MainThread): Tracking: tracking
+2020-06-15 22:23:40.688687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d1b87240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d2e21518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d1b874e0>]}
+2020-06-15 22:23:40.688687 (MainThread): Partial parsing not enabled
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/core.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/adapters/common.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/etc/datetime.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/etc/query.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/helpers.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/table/table.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/view/view.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/adapters.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/catalog.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/etc.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/incremental.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/seed.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/table.sql
+2020-06-15 22:23:40.688687 (MainThread): Parsing macros/materializations/view.sql
+2020-06-15 22:23:40.688687 (MainThread): Partial parsing not enabled
+2020-06-15 22:23:40.688687 (MainThread): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 22:23:40.688687 (MainThread): Opening a new connection, currently in state init
+2020-06-15 22:23:40.688687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 22:23:40.688687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:23:40.688687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 22:23:40.688687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:23:40.688687 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-06-15 22:23:40.688687 (MainThread): 
+2020-06-15 22:23:40.688687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 22:23:40.688687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:23:40.688687 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_mlab-recreate".
+2020-06-15 22:23:40.688687 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-06-15 22:23:48.201687 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_mlab-recreate_dbt_pipeline_deposit".
+2020-06-15 22:23:48.201687 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_mlab-recreate).
+2020-06-15 22:23:48.201687 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 22:23:48.201687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 22:23:48.201687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:23:48.201687 (MainThread): 15:23:48 | Concurrency: 1 threads (target='dev')
+2020-06-15 22:23:48.201687 (MainThread): 15:23:48 | 
+2020-06-15 22:23:48.201687 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2020-06-15 22:23:48.201687 (Thread-1): 15:23:48 | 1 of 3 START table model dbt_pipeline_deposit.my_first_dbt_model..... [RUN]
+2020-06-15 22:23:48.201687 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 22:23:48.201687 (Thread-1): Re-using an available connection from the pool (formerly list_mlab-recreate_dbt_pipeline_deposit).
+2020-06-15 22:23:48.201687 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2020-06-15 22:23:48.201687 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2020-06-15 22:23:48.201687 (Thread-1): finished collecting timing info
+2020-06-15 22:23:48.201687 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 22:23:48.201687 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_first_dbt_model"
+2020-06-15 22:23:48.201687 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+
+  create or replace table `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+    
+2020-06-15 22:23:51.453687 (Thread-1): finished collecting timing info
+2020-06-15 22:23:51.453687 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5dc80553-110b-4e93-b48e-b48c76775dd2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d199e4a8>]}
+2020-06-15 22:23:51.453687 (Thread-1): 15:23:51 | 1 of 3 OK created table model dbt_pipeline_deposit.my_first_dbt_model [CREATE TABLE (2) in 3.25s]
+2020-06-15 22:23:51.453687 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2020-06-15 22:23:51.453687 (Thread-1): Began running node model.my_new_project.sample
+2020-06-15 22:23:51.453687 (Thread-1): 15:23:51 | 2 of 3 START table model dbt_pipeline_deposit.sample................. [RUN]
+2020-06-15 22:23:51.453687 (Thread-1): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 22:23:51.453687 (Thread-1): Re-using an available connection from the pool (formerly model.my_new_project.my_first_dbt_model).
+2020-06-15 22:23:51.453687 (Thread-1): Compiling model.my_new_project.sample
+2020-06-15 22:23:51.453687 (Thread-1): Writing injected SQL for node "model.my_new_project.sample"
+2020-06-15 22:23:51.453687 (Thread-1): finished collecting timing info
+2020-06-15 22:23:51.453687 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 22:23:51.453687 (Thread-1): Writing runtime SQL for node "model.my_new_project.sample"
+2020-06-15 22:23:51.453687 (Thread-1): On model.my_new_project.sample: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.sample"} */
+
+
+  create or replace table `mlab-recreate`.`dbt_pipeline_deposit`.`sample`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT *
+FROM `bigquery-public-data.stackoverflow.posts_questions`
+ORDER BY view_count DESC
+LIMIT 1
+  );
+    
+2020-06-15 22:24:00.778687 (Thread-1): finished collecting timing info
+2020-06-15 22:24:00.778687 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5dc80553-110b-4e93-b48e-b48c76775dd2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d18f5c18>]}
+2020-06-15 22:24:00.778687 (Thread-1): 15:24:00 | 2 of 3 OK created table model dbt_pipeline_deposit.sample............ [CREATE TABLE (1) in 9.32s]
+2020-06-15 22:24:00.808687 (Thread-1): Finished running node model.my_new_project.sample
+2020-06-15 22:24:00.808687 (Thread-1): Began running node model.my_new_project.my_second_dbt_model
+2020-06-15 22:24:00.812687 (Thread-1): 15:24:00 | 3 of 3 START view model dbt_pipeline_deposit.my_second_dbt_model..... [RUN]
+2020-06-15 22:24:00.813687 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 22:24:00.814687 (Thread-1): Re-using an available connection from the pool (formerly model.my_new_project.sample).
+2020-06-15 22:24:00.814687 (Thread-1): Compiling model.my_new_project.my_second_dbt_model
+2020-06-15 22:24:00.814687 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+2020-06-15 22:24:00.814687 (Thread-1): finished collecting timing info
+2020-06-15 22:24:00.814687 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_second_dbt_model"
+2020-06-15 22:24:00.814687 (Thread-1): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+
+
+  create or replace view `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+where id = 1;
+
+
+2020-06-15 22:24:01.743687 (Thread-1): finished collecting timing info
+2020-06-15 22:24:01.743687 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5dc80553-110b-4e93-b48e-b48c76775dd2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d18aea58>]}
+2020-06-15 22:24:01.743687 (Thread-1): 15:24:01 | 3 of 3 OK created view model dbt_pipeline_deposit.my_second_dbt_model [CREATE VIEW in 0.93s]
+2020-06-15 22:24:01.775687 (Thread-1): Finished running node model.my_new_project.my_second_dbt_model
+2020-06-15 22:24:02.004687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 22:24:02.004687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:24:02.004687 (MainThread): 15:24:02 | 
+2020-06-15 22:24:02.004687 (MainThread): 15:24:02 | Finished running 2 table models, 1 view model in 21.32s.
+2020-06-15 22:24:02.004687 (MainThread): Connection 'master' was properly closed.
+2020-06-15 22:24:02.004687 (MainThread): Connection 'model.my_new_project.my_second_dbt_model' was left open.
+2020-06-15 22:24:02.004687 (MainThread): 
+2020-06-15 22:24:02.004687 (MainThread): Completed successfully
+2020-06-15 22:24:02.004687 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2020-06-15 22:24:02.004687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d18b9f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d195b7b8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d19c0748>]}
+2020-06-15 22:24:02.004687 (MainThread): Flushing usage events
