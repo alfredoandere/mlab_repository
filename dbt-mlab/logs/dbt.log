@@ -923,3 +923,2091 @@ where id = 1;
 Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
 2020-06-15 22:24:02.004687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d18b9f60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d195b7b8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e94d19c0748>]}
 2020-06-15 22:24:02.004687 (MainThread): Flushing usage events
+2020-06-15 22:49:41.309110 (MainThread): Running with dbt=0.17.0
+2020-06-15 22:49:41.557885 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-06-15 22:49:41.558315 (MainThread): Tracking: tracking
+2020-06-15 22:49:41.563986 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ca60ad208>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ca73476a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ca60ad4a8>]}
+2020-06-15 22:49:41.620678 (MainThread): Partial parsing not enabled
+2020-06-15 22:49:41.623077 (MainThread): Parsing macros/core.sql
+2020-06-15 22:49:41.630474 (MainThread): Parsing macros/adapters/common.sql
+2020-06-15 22:49:41.706467 (MainThread): Parsing macros/etc/datetime.sql
+2020-06-15 22:49:41.715776 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-06-15 22:49:41.716906 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-06-15 22:49:41.718684 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-06-15 22:49:41.720837 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-06-15 22:49:41.722559 (MainThread): Parsing macros/etc/query.sql
+2020-06-15 22:49:41.723752 (MainThread): Parsing macros/materializations/helpers.sql
+2020-06-15 22:49:41.731882 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-06-15 22:49:41.746781 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-06-15 22:49:41.748807 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-06-15 22:49:41.757015 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-06-15 22:49:41.778932 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-15 22:49:41.808797 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-15 22:49:41.810755 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-15 22:49:41.827760 (MainThread): Parsing macros/materializations/table/table.sql
+2020-06-15 22:49:41.834682 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-15 22:49:41.840047 (MainThread): Parsing macros/materializations/view/view.sql
+2020-06-15 22:49:41.846914 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-06-15 22:49:41.849102 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-06-15 22:49:41.850127 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-06-15 22:49:41.851359 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-06-15 22:49:41.852855 (MainThread): Parsing macros/adapters.sql
+2020-06-15 22:49:41.870513 (MainThread): Parsing macros/catalog.sql
+2020-06-15 22:49:41.877234 (MainThread): Parsing macros/etc.sql
+2020-06-15 22:49:41.878087 (MainThread): Parsing macros/materializations/incremental.sql
+2020-06-15 22:49:41.891875 (MainThread): Parsing macros/materializations/seed.sql
+2020-06-15 22:49:41.894161 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-06-15 22:49:41.896144 (MainThread): Parsing macros/materializations/table.sql
+2020-06-15 22:49:41.906563 (MainThread): Parsing macros/materializations/view.sql
+2020-06-15 22:49:41.929702 (MainThread): Partial parsing not enabled
+2020-06-15 22:49:41.965245 (MainThread): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 22:49:41.965404 (MainThread): Opening a new connection, currently in state init
+2020-06-15 22:49:41.993676 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 22:49:41.993847 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:49:42.005121 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 22:49:42.005289 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:49:42.197060 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-06-15 22:49:42.197939 (MainThread): 
+2020-06-15 22:49:42.198431 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 22:49:42.198542 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:49:42.203687 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_mlab-recreate".
+2020-06-15 22:49:42.204140 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-06-15 22:49:42.819048 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_mlab-recreate_dbt_pipeline_deposit".
+2020-06-15 22:49:42.819263 (ThreadPoolExecutor-1_0): Re-using an available connection from the pool (formerly list_mlab-recreate).
+2020-06-15 22:49:42.819447 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 22:49:43.057631 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 22:49:43.058413 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:49:43.059927 (MainThread): 15:49:43 | Concurrency: 1 threads (target='dev')
+2020-06-15 22:49:43.060643 (MainThread): 15:49:43 | 
+2020-06-15 22:49:43.077242 (Thread-1): Began running node model.my_new_project.my_first_dbt_model
+2020-06-15 22:49:43.079780 (Thread-1): 15:49:43 | 1 of 3 START table model dbt_pipeline_deposit.my_first_dbt_model..... [RUN]
+2020-06-15 22:49:43.080809 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 22:49:43.081063 (Thread-1): Re-using an available connection from the pool (formerly list_mlab-recreate_dbt_pipeline_deposit).
+2020-06-15 22:49:43.081276 (Thread-1): Compiling model.my_new_project.my_first_dbt_model
+2020-06-15 22:49:43.109895 (Thread-1): Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+2020-06-15 22:49:43.110495 (Thread-1): finished collecting timing info
+2020-06-15 22:49:43.136102 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 22:49:43.397909 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_first_dbt_model"
+2020-06-15 22:49:43.398304 (Thread-1): On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+
+  create or replace table `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+    
+2020-06-15 22:49:45.424431 (Thread-1): finished collecting timing info
+2020-06-15 22:49:45.425995 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc8b691e-1707-4652-b308-acbb94de102d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ca5dfec88>]}
+2020-06-15 22:49:45.428313 (Thread-1): 15:49:45 | 1 of 3 OK created table model dbt_pipeline_deposit.my_first_dbt_model [CREATE TABLE (2) in 2.35s]
+2020-06-15 22:49:45.428570 (Thread-1): Finished running node model.my_new_project.my_first_dbt_model
+2020-06-15 22:49:45.429046 (Thread-1): Began running node model.my_new_project.sample
+2020-06-15 22:49:45.433422 (Thread-1): 15:49:45 | 2 of 3 START table model dbt_pipeline_deposit.sample................. [RUN]
+2020-06-15 22:49:45.434072 (Thread-1): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 22:49:45.434810 (Thread-1): Re-using an available connection from the pool (formerly model.my_new_project.my_first_dbt_model).
+2020-06-15 22:49:45.435163 (Thread-1): Compiling model.my_new_project.sample
+2020-06-15 22:49:45.445413 (Thread-1): Writing injected SQL for node "model.my_new_project.sample"
+2020-06-15 22:49:45.445845 (Thread-1): finished collecting timing info
+2020-06-15 22:49:45.450012 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 22:49:45.910659 (Thread-1): Writing runtime SQL for node "model.my_new_project.sample"
+2020-06-15 22:49:45.911263 (Thread-1): On model.my_new_project.sample: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.sample"} */
+
+
+  create or replace table `mlab-recreate`.`dbt_pipeline_deposit`.`sample`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT *
+FROM `bigquery-public-data.stackoverflow.posts_questions`
+ORDER BY view_count DESC
+LIMIT 1
+  );
+    
+2020-06-15 22:49:53.700903 (Thread-1): finished collecting timing info
+2020-06-15 22:49:53.704826 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc8b691e-1707-4652-b308-acbb94de102d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ca5e38d68>]}
+2020-06-15 22:49:53.708460 (Thread-1): 15:49:53 | 2 of 3 OK created table model dbt_pipeline_deposit.sample............ [CREATE TABLE (1) in 8.27s]
+2020-06-15 22:49:53.708999 (Thread-1): Finished running node model.my_new_project.sample
+2020-06-15 22:49:53.709536 (Thread-1): Began running node model.my_new_project.my_second_dbt_model
+2020-06-15 22:49:53.714211 (Thread-1): 15:49:53 | 3 of 3 START view model dbt_pipeline_deposit.my_second_dbt_model..... [RUN]
+2020-06-15 22:49:53.715153 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 22:49:53.715360 (Thread-1): Re-using an available connection from the pool (formerly model.my_new_project.sample).
+2020-06-15 22:49:53.715547 (Thread-1): Compiling model.my_new_project.my_second_dbt_model
+2020-06-15 22:49:53.729911 (Thread-1): Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+2020-06-15 22:49:53.730453 (Thread-1): finished collecting timing info
+2020-06-15 22:49:53.758332 (Thread-1): Writing runtime SQL for node "model.my_new_project.my_second_dbt_model"
+2020-06-15 22:49:53.758823 (Thread-1): On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+
+
+  create or replace view `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+where id = 1;
+
+
+2020-06-15 22:49:54.604822 (Thread-1): finished collecting timing info
+2020-06-15 22:49:54.607129 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dc8b691e-1707-4652-b308-acbb94de102d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ca5f11f60>]}
+2020-06-15 22:49:54.609494 (Thread-1): 15:49:54 | 3 of 3 OK created view model dbt_pipeline_deposit.my_second_dbt_model [CREATE VIEW in 0.89s]
+2020-06-15 22:49:54.609846 (Thread-1): Finished running node model.my_new_project.my_second_dbt_model
+2020-06-15 22:49:54.664314 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 22:49:54.664497 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 22:49:54.664914 (MainThread): 15:49:54 | 
+2020-06-15 22:49:54.665094 (MainThread): 15:49:54 | Finished running 2 table models, 1 view model in 12.47s.
+2020-06-15 22:49:54.665242 (MainThread): Connection 'master' was properly closed.
+2020-06-15 22:49:54.665336 (MainThread): Connection 'model.my_new_project.my_second_dbt_model' was left open.
+2020-06-15 22:49:54.677828 (MainThread): 
+2020-06-15 22:49:54.678126 (MainThread): Completed successfully
+2020-06-15 22:49:54.678313 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2020-06-15 22:49:54.678762 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ca5db3630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ca5e0cfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4ca5e0c588>]}
+2020-06-15 22:49:54.679219 (MainThread): Flushing usage events
+2020-06-15 22:49:59.287244 (MainThread): Running with dbt=0.17.0
+2020-06-15 22:49:59.522260 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, strict=False, target=None, test_new_parser=False, use_cache=True, vars='{}', warn_error=False, which='deps', write_json=True)
+2020-06-15 22:49:59.522684 (MainThread): Tracking: tracking
+2020-06-15 22:49:59.527740 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae94cdf79e8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae94b15e4a8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae949ec3fd0>]}
+2020-06-15 22:49:59.528378 (MainThread): Warning: No packages were found in packages.yml
+2020-06-15 22:49:59.528639 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae949eaee48>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae94cdf79e8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae949ec3f98>]}
+2020-06-15 22:49:59.528933 (MainThread): Flushing usage events
+2020-06-15 22:51:00.292957 (MainThread): Running with dbt=0.17.0
+2020-06-15 22:51:00.530195 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, strict=False, target=None, test_new_parser=False, use_cache=True, vars='{}', warn_error=False, which='deps', write_json=True)
+2020-06-15 22:51:00.530620 (MainThread): Tracking: tracking
+2020-06-15 22:51:00.536782 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b15912af898>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b1592508518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b159126ffd0>]}
+2020-06-15 22:51:00.537419 (MainThread): Warning: No packages were found in packages.yml
+2020-06-15 22:51:00.538161 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b15912af898>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b159126ffd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b159126f198>]}
+2020-06-15 22:51:00.538349 (MainThread): Flushing usage events
+2020-06-15 22:54:30.615022 (MainThread): Running with dbt=0.17.0
+2020-06-15 22:54:30.847779 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, strict=False, target=None, test_new_parser=False, use_cache=True, vars='{}', warn_error=False, which='deps', write_json=True)
+2020-06-15 22:54:30.848197 (MainThread): Tracking: tracking
+2020-06-15 22:54:30.853259 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ffe5649b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ffc8cb4e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ffb62f278>]}
+2020-06-15 22:54:30.853879 (MainThread): Warning: No packages were found in packages.yml
+2020-06-15 22:54:30.854137 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ffb61ae80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ffe5649b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1ffb62f198>]}
+2020-06-15 22:54:30.854375 (MainThread): Flushing usage events
+2020-06-15 23:02:27.600687 (MainThread): Running with dbt=0.17.0
+2020-06-15 23:02:28.088687 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, strict=False, target=None, test_new_parser=False, use_cache=True, vars='{}', warn_error=False, which='deps', write_json=True)
+2020-06-15 23:02:28.088687 (MainThread): Tracking: tracking
+2020-06-15 23:02:28.088687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2038e5c8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2038c854a8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b20379f4710>]}
+2020-06-15 23:02:28.088687 (MainThread): Set downloads directory='/tmp/dbt-downloads-26b6qzn0'
+2020-06-15 23:02:28.088687 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/index.json
+2020-06-15 23:02:28.220687 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/index.json 200
+2020-06-15 23:02:28.220687 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow.json
+2020-06-15 23:02:28.289687 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow.json 200
+2020-06-15 23:02:28.554687 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow/0.7.0.json
+2020-06-15 23:02:28.554687 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow/0.7.0.json 200
+2020-06-15 23:02:28.554687 (MainThread): Executing "git clone --depth 1 https://github.com/fishtown0analytics/dbt-utils.git 0a93115738385d7fb3640e3278de3e3d"
+2020-06-15 23:02:38.597687 (MainThread): STDOUT: "b''"
+2020-06-15 23:02:38.597687 (MainThread): STDERR: "b"Cloning into '0a93115738385d7fb3640e3278de3e3d'...\nremote: Repository not found.\nfatal: repository 'https://github.com/fishtown0analytics/dbt-utils.git/' not found\n""
+2020-06-15 23:02:38.597687 (MainThread): command return code=128
+2020-06-15 23:02:38.597687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b20379a1588>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b20379a1358>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b20379a1be0>]}
+2020-06-15 23:02:38.597687 (MainThread): Flushing usage events
+2020-06-15 23:02:38.597687 (MainThread): Encountered an error:
+2020-06-15 23:02:38.597687 (MainThread): Got a non-zero returncode running: ['git', 'clone', '--depth', '1', 'https://github.com/fishtown0analytics/dbt-utils.git', '0a93115738385d7fb3640e3278de3e3d']
+2020-06-15 23:02:38.597687 (MainThread): Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 81, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 159, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/main.py", line 212, in run_from_args
+    results = task.run()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/task/deps.py", line 52, in run
+    final_deps = resolve_packages(packages, self.config)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/deps/resolver.py", line 137, in resolve_packages
+    target = final[package].resolved().fetch_metadata(config, renderer)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/deps/base.py", line 85, in fetch_metadata
+    self._cached_metadata = self._fetch_metadata(project, renderer)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/deps/git.py", line 74, in _fetch_metadata
+    path = self._checkout()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/deps/git.py", line 61, in _checkout
+    dirname=self._checkout_name
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/git.py", line 78, in clone_and_checkout
+    remove_git_dir=remove_git_dir)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/git.py", line 20, in clone
+    result = run_cmd(cwd, clone_cmd, env={'LC_ALL': 'C'})
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/system.py", line 323, in run_cmd
+    out, err)
+dbt.exceptions.CommandResultError: Got a non-zero returncode running: ['git', 'clone', '--depth', '1', 'https://github.com/fishtown0analytics/dbt-utils.git', '0a93115738385d7fb3640e3278de3e3d']
+
+2020-06-15 23:03:59.562687 (MainThread): Running with dbt=0.17.0
+2020-06-15 23:03:59.699687 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, strict=False, target=None, test_new_parser=False, use_cache=True, vars='{}', warn_error=False, which='deps', write_json=True)
+2020-06-15 23:03:59.699687 (MainThread): Tracking: tracking
+2020-06-15 23:03:59.699687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787d0d4b3390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787d0e77b6d8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787d0d4d8e48>]}
+2020-06-15 23:03:59.699687 (MainThread): Set downloads directory='/tmp/dbt-downloads-yldhabhh'
+2020-06-15 23:03:59.699687 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/index.json
+2020-06-15 23:04:05.157687 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/index.json 200
+2020-06-15 23:04:05.157687 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow.json
+2020-06-15 23:04:05.222687 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow.json 200
+2020-06-15 23:04:05.222687 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow/0.7.3.json
+2020-06-15 23:04:05.658687 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow/0.7.3.json 200
+2020-06-15 23:04:05.658687 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow.json
+2020-06-15 23:04:05.658687 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow.json 200
+2020-06-15 23:04:05.658687 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow/0.7.3.json
+2020-06-15 23:04:05.658687 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/snowplow/0.7.3.json 200
+2020-06-15 23:04:05.658687 (MainThread): Installing fishtown-analytics/snowplow@0.7.3
+2020-06-15 23:04:05.965687 (MainThread):   Installed from version 0.7.3
+
+2020-06-15 23:04:05.965687 (MainThread): Sending event: {'category': 'dbt', 'action': 'package', 'label': '2a85a4d6-ee55-4743-beda-09509bc39113', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787d0d5d5a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787d0f03feb8>]}
+2020-06-15 23:04:05.965687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787d0e93dc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787d0e77b6d8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787d0f03feb8>]}
+2020-06-15 23:04:05.965687 (MainThread): Flushing usage events
+2020-06-15 23:04:15.745687 (MainThread): Running with dbt=0.17.0
+2020-06-15 23:04:15.745687 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2020-06-15 23:04:15.745687 (MainThread): Tracking: tracking
+2020-06-15 23:04:15.745687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2e40c93978>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2e41f326a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2e40c93ac8>]}
+2020-06-15 23:04:15.745687 (MainThread): Partial parsing not enabled
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/core.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/common.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/etc/datetime.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/etc/query.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/helpers.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/table/table.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/view/view.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/catalog.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/etc.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/incremental.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/seed.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/table.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/materializations/view.sql
+2020-06-15 23:04:15.745687 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - snowplow
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+2020-06-15 23:04:15.745687 (MainThread): Partial parsing not enabled
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/most_recent_record.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/similar_to.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/timestamp_ntz.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/url_query.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/bigquery/identification/snowplow_id_map.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_page_views.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events_internal_fixed.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events_scroll_depth.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events_time.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_page_context.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/bigquery/sessions/snowplow_sessions.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/bigquery/sessions/snowplow_sessions_tmp.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/default/identification/snowplow_id_map.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/default/page_views/snowplow_page_views.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events_internal_fixed.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events_scroll_depth.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events_time.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_page_context.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/default/sessions/snowplow_sessions.sql
+2020-06-15 23:04:15.745687 (MainThread): Parsing macros/adapters/default/sessions/snowplow_sessions_tmp.sql
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state init
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_events".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_web_page_context".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_performance_timing_context".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_useragent_context".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_id_map".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_page_views".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events_internal_fixed".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events_scroll_depth".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events_time".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_page_context".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_timing_context".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_ua_parser_context".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_sessions".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:15.745687 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_sessions_tmp".
+2020-06-15 23:04:15.745687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:19.468687 (MainThread): WARNING: Found documentation for resource "snowplow_web_events" which was not found or is disabled
+2020-06-15 23:04:19.468687 (MainThread): WARNING: Found documentation for resource "snowplow_web_events_time" which was not found or is disabled
+2020-06-15 23:04:19.469687 (MainThread): WARNING: Found documentation for resource "snowplow_web_events_scroll_depth" which was not found or is disabled
+2020-06-15 23:04:19.469687 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_domain_userid' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:04:19.469687 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_collector_tstamp' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:04:19.469687 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_domain_sessionid' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:04:19.469687 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:04:19.469687 (MainThread): WARNING: Test 'test.snowplow.unique_snowplow_web_events_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:04:19.469687 (MainThread): WARNING: Test 'test.snowplow.relationships_snowplow_web_events_page_view_id__page_view_id__ref_snowplow_web_page_context_' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:04:19.469687 (MainThread): WARNING: Test 'test.snowplow.unique_snowplow_web_events_time_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_time' which is disabled
+2020-06-15 23:04:19.469687 (MainThread): WARNING: Test 'test.snowplow.relationships_snowplow_web_events_time_page_view_id__page_view_id__ref_snowplow_web_page_context_' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_time' which is disabled
+2020-06-15 23:04:19.469687 (MainThread): WARNING: Test 'test.snowplow.unique_snowplow_web_events_scroll_depth_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_scroll_depth' which is disabled
+2020-06-15 23:04:19.469687 (MainThread): WARNING: Test 'test.snowplow.relationships_snowplow_web_events_scroll_depth_page_view_id__page_view_id__ref_snowplow_web_page_context_' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_scroll_depth' which is disabled
+2020-06-15 23:04:19.469687 (MainThread): Found 10 models, 16 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 1 seed file, 0 sources
+2020-06-15 23:04:19.469687 (MainThread): 
+2020-06-15 23:04:19.469687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:04:19.469687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:19.469687 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_mlab-recreate_dbt_pipeline_deposit".
+2020-06-15 23:04:19.469687 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2020-06-15 23:04:19.469687 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 23:04:26.190687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:04:26.190687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:26.190687 (MainThread): 16:04:26 | Concurrency: 1 threads (target='dev')
+2020-06-15 23:04:26.190687 (MainThread): 16:04:26 | 
+2020-06-15 23:04:26.190687 (Thread-1): Began running node model.snowplow.snowplow_base_events
+2020-06-15 23:04:26.190687 (Thread-1): Acquiring new bigquery connection "model.snowplow.snowplow_base_events".
+2020-06-15 23:04:26.190687 (Thread-1): Re-using an available connection from the pool (formerly list_mlab-recreate_dbt_pipeline_deposit).
+2020-06-15 23:04:26.190687 (Thread-1): Compiling model.snowplow.snowplow_base_events
+2020-06-15 23:04:26.190687 (Thread-1): finished collecting timing info
+2020-06-15 23:04:26.190687 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  Required var 'snowplow:events' not found in config:
+  Vars supplied to snowplow_base_events = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 228, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 165, in compile_and_execute
+    ctx.node = self.compile(manifest)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 340, in compile
+    return compile_node(self.adapter, self.config, self.node, manifest, {})
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 255, in compile_node
+    node = compiler.compile_node(node, manifest, extra_context)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 179, in compile_node
+    node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 530, in get_rendered
+    return render_template(template, ctx, node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 481, in render_template
+    return template.render(ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 3, in top-level template code
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 148, in __call__
+    return self.get_missing_var(var_name)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 129, in get_missing_var
+    raise_compiler_error(msg, self.node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/exceptions.py", line 392, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  Required var 'snowplow:events' not found in config:
+  Vars supplied to snowplow_base_events = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:04:26.190687 (Thread-1): Finished running node model.snowplow.snowplow_base_events
+2020-06-15 23:04:26.190687 (Thread-1): Began running node model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:26.190687 (Thread-1): Acquiring new bigquery connection "model.snowplow.snowplow_base_web_page_context".
+2020-06-15 23:04:26.190687 (Thread-1): Re-using an available connection from the pool (formerly model.snowplow.snowplow_base_events).
+2020-06-15 23:04:26.190687 (Thread-1): Compiling model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:26.190687 (Thread-1): finished collecting timing info
+2020-06-15 23:04:26.190687 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  Required var 'snowplow:context:web_page' not found in config:
+  Vars supplied to snowplow_base_web_page_context = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 228, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 165, in compile_and_execute
+    ctx.node = self.compile(manifest)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 340, in compile
+    return compile_node(self.adapter, self.config, self.node, manifest, {})
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 255, in compile_node
+    node = compiler.compile_node(node, manifest, extra_context)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 179, in compile_node
+    node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 530, in get_rendered
+    return render_template(template, ctx, node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 481, in render_template
+    return template.render(ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 1, in top-level template code
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 148, in __call__
+    return self.get_missing_var(var_name)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 129, in get_missing_var
+    raise_compiler_error(msg, self.node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/exceptions.py", line 392, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  Required var 'snowplow:context:web_page' not found in config:
+  Vars supplied to snowplow_base_web_page_context = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:26.190687 (Thread-1): Finished running node model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:26.190687 (Thread-1): Began running node test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:04:26.190687 (Thread-1): 16:04:26 | 1 of 16 START test not_null_my_first_dbt_model_id.................... [RUN]
+2020-06-15 23:04:26.190687 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_first_dbt_model_id".
+2020-06-15 23:04:26.190687 (Thread-1): Re-using an available connection from the pool (formerly model.snowplow.snowplow_base_web_page_context).
+2020-06-15 23:04:26.190687 (Thread-1): Compiling test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:04:26.190687 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id"
+2020-06-15 23:04:26.190687 (Thread-1): finished collecting timing info
+2020-06-15 23:04:26.190687 (Thread-1): On test.my_new_project.not_null_my_first_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.not_null_my_first_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+where id is null
+
+
+2020-06-15 23:04:26.190687 (Thread-1): finished collecting timing info
+2020-06-15 23:04:26.190687 (Thread-1): 16:04:26 | 1 of 16 FAIL 1 not_null_my_first_dbt_model_id........................ [FAIL 1 in 0.00s]
+2020-06-15 23:04:26.190687 (Thread-1): Finished running node test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:04:26.190687 (Thread-1): Began running node test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:04:26.190687 (Thread-1): 16:04:26 | 2 of 16 START test not_null_my_second_dbt_model_id................... [RUN]
+2020-06-15 23:04:26.190687 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_second_dbt_model_id".
+2020-06-15 23:04:26.190687 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.not_null_my_first_dbt_model_id).
+2020-06-15 23:04:26.190687 (Thread-1): Compiling test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:04:26.190687 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_second_dbt_model_id"
+2020-06-15 23:04:26.190687 (Thread-1): finished collecting timing info
+2020-06-15 23:04:26.190687 (Thread-1): On test.my_new_project.not_null_my_second_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.not_null_my_second_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+where id is null
+
+
+2020-06-15 23:04:29.576687 (Thread-1): finished collecting timing info
+2020-06-15 23:04:29.576687 (Thread-1): 16:04:29 | 2 of 16 PASS not_null_my_second_dbt_model_id......................... [PASS in 3.39s]
+2020-06-15 23:04:29.603687 (Thread-1): Finished running node test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:04:29.604687 (Thread-1): Began running node test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:04:29.607687 (Thread-1): 16:04:29 | 3 of 16 START test unique_my_first_dbt_model_id...................... [RUN]
+2020-06-15 23:04:29.611687 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_first_dbt_model_id".
+2020-06-15 23:04:29.611687 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.not_null_my_second_dbt_model_id).
+2020-06-15 23:04:29.611687 (Thread-1): Compiling test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:04:29.611687 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id"
+2020-06-15 23:04:29.611687 (Thread-1): finished collecting timing info
+2020-06-15 23:04:29.611687 (Thread-1): On test.my_new_project.unique_my_first_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.unique_my_first_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        id
+
+    from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+    where id is not null
+    group by id
+    having count(*) > 1
+
+) validation_errors
+
+
+2020-06-15 23:04:30.732687 (Thread-1): finished collecting timing info
+2020-06-15 23:04:30.732687 (Thread-1): 16:04:30 | 3 of 16 PASS unique_my_first_dbt_model_id............................ [PASS in 1.12s]
+2020-06-15 23:04:30.831687 (Thread-1): Finished running node test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:04:30.832687 (Thread-1): Began running node test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:04:30.836687 (Thread-1): 16:04:30 | 4 of 16 START test unique_my_second_dbt_model_id..................... [RUN]
+2020-06-15 23:04:30.839687 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_second_dbt_model_id".
+2020-06-15 23:04:30.839687 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.unique_my_first_dbt_model_id).
+2020-06-15 23:04:30.844687 (Thread-1): Compiling test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:04:30.855687 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_second_dbt_model_id"
+2020-06-15 23:04:30.855687 (Thread-1): finished collecting timing info
+2020-06-15 23:04:30.855687 (Thread-1): On test.my_new_project.unique_my_second_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.unique_my_second_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        id
+
+    from `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+    where id is not null
+    group by id
+    having count(*) > 1
+
+) validation_errors
+
+
+2020-06-15 23:04:32.296687 (Thread-1): finished collecting timing info
+2020-06-15 23:04:32.296687 (Thread-1): 16:04:32 | 4 of 16 PASS unique_my_second_dbt_model_id........................... [PASS in 1.46s]
+2020-06-15 23:04:32.296687 (Thread-1): Finished running node test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:04:32.359687 (Thread-1): Began running node test.snowplow.not_null_snowplow_base_events_app_id
+2020-06-15 23:04:32.359687 (Thread-1): 16:04:32 | 5 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_base_events_app_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.360687 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:04:32.360687 (Thread-1):   Required var 'snowplow:events' not found in config:
+2020-06-15 23:04:32.361687 (Thread-1):   Vars supplied to snowplow_base_events = {
+2020-06-15 23:04:32.362687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.362687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.362687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.362687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.362687 (Thread-1):   }
+2020-06-15 23:04:32.362687 (Thread-1):   
+2020-06-15 23:04:32.362687 (Thread-1):   > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:04:32.362687 (Thread-1):   > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:04:32.362687 (Thread-1): Finished running node test.snowplow.not_null_snowplow_base_events_app_id
+2020-06-15 23:04:32.363687 (Thread-1): Began running node test.snowplow.not_null_snowplow_base_events_event_id
+2020-06-15 23:04:32.364687 (Thread-1): 16:04:32 | 6 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_base_events_event_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.364687 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:04:32.364687 (Thread-1):   Required var 'snowplow:events' not found in config:
+2020-06-15 23:04:32.364687 (Thread-1):   Vars supplied to snowplow_base_events = {
+2020-06-15 23:04:32.364687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.364687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.364687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.364687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.364687 (Thread-1):   }
+2020-06-15 23:04:32.364687 (Thread-1):   
+2020-06-15 23:04:32.364687 (Thread-1):   > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:04:32.366687 (Thread-1):   > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:04:32.366687 (Thread-1): Finished running node test.snowplow.not_null_snowplow_base_events_event_id
+2020-06-15 23:04:32.366687 (Thread-1): Began running node test.snowplow.unique_snowplow_base_events_event_id
+2020-06-15 23:04:32.366687 (Thread-1): 16:04:32 | 7 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_base_events_event_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.366687 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:04:32.367687 (Thread-1):   Required var 'snowplow:events' not found in config:
+2020-06-15 23:04:32.367687 (Thread-1):   Vars supplied to snowplow_base_events = {
+2020-06-15 23:04:32.367687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.368687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.368687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.368687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.368687 (Thread-1):   }
+2020-06-15 23:04:32.368687 (Thread-1):   
+2020-06-15 23:04:32.368687 (Thread-1):   > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:04:32.369687 (Thread-1):   > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:04:32.369687 (Thread-1): Finished running node test.snowplow.unique_snowplow_base_events_event_id
+2020-06-15 23:04:32.369687 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_page_view_id
+2020-06-15 23:04:32.369687 (Thread-1): 16:04:32 | 8 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_page_view_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.369687 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.370687 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:04:32.370687 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:04:32.370687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.371687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.371687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.371687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.371687 (Thread-1):   }
+2020-06-15 23:04:32.372687 (Thread-1):   
+2020-06-15 23:04:32.372687 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.372687 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.372687 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_page_view_id
+2020-06-15 23:04:32.373687 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_session_id
+2020-06-15 23:04:32.373687 (Thread-1): 16:04:32 | 9 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_session_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.373687 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:04:32.373687 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.373687 (Thread-1):   }
+2020-06-15 23:04:32.373687 (Thread-1):   
+2020-06-15 23:04:32.373687 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_session_id
+2020-06-15 23:04:32.373687 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_session_index
+2020-06-15 23:04:32.373687 (Thread-1): 16:04:32 | 10 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_session_index due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.373687 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:04:32.373687 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.373687 (Thread-1):   }
+2020-06-15 23:04:32.373687 (Thread-1):   
+2020-06-15 23:04:32.373687 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_session_index
+2020-06-15 23:04:32.373687 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_user_snowplow_domain_id
+2020-06-15 23:04:32.373687 (Thread-1): 16:04:32 | 11 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_user_snowplow_domain_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.373687 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:04:32.373687 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.373687 (Thread-1):   }
+2020-06-15 23:04:32.373687 (Thread-1):   
+2020-06-15 23:04:32.373687 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_user_snowplow_domain_id
+2020-06-15 23:04:32.373687 (Thread-1): Began running node test.snowplow.not_null_snowplow_sessions_session_id
+2020-06-15 23:04:32.373687 (Thread-1): 16:04:32 | 12 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_sessions_session_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.373687 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:04:32.373687 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.373687 (Thread-1):   }
+2020-06-15 23:04:32.373687 (Thread-1):   
+2020-06-15 23:04:32.373687 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1): Finished running node test.snowplow.not_null_snowplow_sessions_session_id
+2020-06-15 23:04:32.373687 (Thread-1): Began running node test.snowplow.not_null_snowplow_web_page_context_page_view_id
+2020-06-15 23:04:32.373687 (Thread-1): 16:04:32 | 13 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_web_page_context_page_view_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.373687 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:04:32.373687 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.373687 (Thread-1):   }
+2020-06-15 23:04:32.373687 (Thread-1):   
+2020-06-15 23:04:32.373687 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1): Finished running node test.snowplow.not_null_snowplow_web_page_context_page_view_id
+2020-06-15 23:04:32.373687 (Thread-1): Began running node test.snowplow.unique_snowplow_page_views_page_view_id
+2020-06-15 23:04:32.373687 (Thread-1): 16:04:32 | 14 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_page_views_page_view_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.373687 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:04:32.373687 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.373687 (Thread-1):   }
+2020-06-15 23:04:32.373687 (Thread-1):   
+2020-06-15 23:04:32.373687 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1): Finished running node test.snowplow.unique_snowplow_page_views_page_view_id
+2020-06-15 23:04:32.373687 (Thread-1): Began running node test.snowplow.unique_snowplow_sessions_session_id
+2020-06-15 23:04:32.373687 (Thread-1): 16:04:32 | 15 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_sessions_session_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.373687 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:04:32.373687 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.373687 (Thread-1):   }
+2020-06-15 23:04:32.373687 (Thread-1):   
+2020-06-15 23:04:32.373687 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1): Finished running node test.snowplow.unique_snowplow_sessions_session_id
+2020-06-15 23:04:32.373687 (Thread-1): Began running node test.snowplow.unique_snowplow_web_page_context_concat_page_view_id_root_id_
+2020-06-15 23:04:32.373687 (Thread-1): 16:04:32 | 16 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_web_page_context_concat_page_view_id_root_id_ due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:04:32.373687 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:04:32.373687 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:04:32.373687 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:04:32.373687 (Thread-1):   }
+2020-06-15 23:04:32.373687 (Thread-1):   
+2020-06-15 23:04:32.373687 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:04:32.373687 (Thread-1): Finished running node test.snowplow.unique_snowplow_web_page_context_concat_page_view_id_root_id_
+2020-06-15 23:04:35.653687 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:04:35.653687 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:04:35.655687 (MainThread): 16:04:35 | 
+2020-06-15 23:04:35.655687 (MainThread): 16:04:35 | Finished running 16 tests in 16.18s.
+2020-06-15 23:04:35.656687 (MainThread): Connection 'master' was properly closed.
+2020-06-15 23:04:35.657687 (MainThread): Connection 'test.my_new_project.unique_my_second_dbt_model_id' was left open.
+2020-06-15 23:04:35.716687 (MainThread): 
+2020-06-15 23:04:35.717687 (MainThread): Completed with 13 errors and 0 warnings:
+2020-06-15 23:04:35.717687 (MainThread): 
+2020-06-15 23:04:35.717687 (MainThread): Failure in test not_null_my_first_dbt_model_id (models/example/schema.yml)
+2020-06-15 23:04:35.717687 (MainThread):   Got 1 result, expected 0.
+2020-06-15 23:04:35.717687 (MainThread): 
+2020-06-15 23:04:35.717687 (MainThread):   compiled SQL at target/compiled/my_new_project/models/example/schema.yml/schema_test/not_null_my_first_dbt_model_id.sql
+2020-06-15 23:04:35.717687 (MainThread): 
+2020-06-15 23:04:35.717687 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_base_events_app_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_events
+2020-06-15 23:04:35.717687 (MainThread): 
+2020-06-15 23:04:35.717687 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_base_events_event_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_events
+2020-06-15 23:04:35.717687 (MainThread): 
+2020-06-15 23:04:35.718687 (MainThread): Compilation Error in test.snowplow.unique_snowplow_base_events_event_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_events
+2020-06-15 23:04:35.718687 (MainThread): 
+2020-06-15 23:04:35.718687 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_page_view_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:35.719687 (MainThread): 
+2020-06-15 23:04:35.719687 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_session_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:35.719687 (MainThread): 
+2020-06-15 23:04:35.719687 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_session_index, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:35.720687 (MainThread): 
+2020-06-15 23:04:35.720687 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_user_snowplow_domain_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:35.720687 (MainThread): 
+2020-06-15 23:04:35.720687 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_sessions_session_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:35.720687 (MainThread): 
+2020-06-15 23:04:35.720687 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_web_page_context_page_view_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:35.720687 (MainThread): 
+2020-06-15 23:04:35.720687 (MainThread): Compilation Error in test.snowplow.unique_snowplow_page_views_page_view_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:35.720687 (MainThread): 
+2020-06-15 23:04:35.721687 (MainThread): Compilation Error in test.snowplow.unique_snowplow_sessions_session_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:35.721687 (MainThread): 
+2020-06-15 23:04:35.721687 (MainThread): Compilation Error in test.snowplow.unique_snowplow_web_page_context_concat_page_view_id_root_id_, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:04:35.721687 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=13 SKIP=0 TOTAL=16
+2020-06-15 23:04:35.721687 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2e408eff28>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2e40762a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2e40762c18>]}
+2020-06-15 23:04:35.722687 (MainThread): Flushing usage events
+2020-06-15 23:13:30.757805 (MainThread): Running with dbt=0.17.0
+2020-06-15 23:13:30.989714 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2020-06-15 23:13:30.990132 (MainThread): Tracking: tracking
+2020-06-15 23:13:30.995019 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5acb3b51d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5acc64f518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5acb3b5470>]}
+2020-06-15 23:13:31.051286 (MainThread): Partial parsing not enabled
+2020-06-15 23:13:31.053422 (MainThread): Parsing macros/core.sql
+2020-06-15 23:13:31.060208 (MainThread): Parsing macros/adapters/common.sql
+2020-06-15 23:13:31.116789 (MainThread): Parsing macros/etc/datetime.sql
+2020-06-15 23:13:31.126068 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-06-15 23:13:31.127152 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-06-15 23:13:31.128904 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-06-15 23:13:31.131076 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-06-15 23:13:31.132798 (MainThread): Parsing macros/etc/query.sql
+2020-06-15 23:13:31.133933 (MainThread): Parsing macros/materializations/helpers.sql
+2020-06-15 23:13:31.142008 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-06-15 23:13:31.156798 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-06-15 23:13:31.158825 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-06-15 23:13:31.165648 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-06-15 23:13:31.187136 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-15 23:13:31.216041 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-15 23:13:31.217976 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-15 23:13:31.234984 (MainThread): Parsing macros/materializations/table/table.sql
+2020-06-15 23:13:31.241925 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-15 23:13:31.247124 (MainThread): Parsing macros/materializations/view/view.sql
+2020-06-15 23:13:31.253517 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-06-15 23:13:31.255655 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-06-15 23:13:31.256640 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-06-15 23:13:31.257937 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-06-15 23:13:31.259399 (MainThread): Parsing macros/adapters.sql
+2020-06-15 23:13:31.276790 (MainThread): Parsing macros/catalog.sql
+2020-06-15 23:13:31.282955 (MainThread): Parsing macros/etc.sql
+2020-06-15 23:13:31.283716 (MainThread): Parsing macros/materializations/incremental.sql
+2020-06-15 23:13:31.297608 (MainThread): Parsing macros/materializations/seed.sql
+2020-06-15 23:13:31.299903 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-06-15 23:13:31.301908 (MainThread): Parsing macros/materializations/table.sql
+2020-06-15 23:13:31.312189 (MainThread): Parsing macros/materializations/view.sql
+2020-06-15 23:13:31.359883 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - snowplow
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+2020-06-15 23:13:31.360508 (MainThread): Partial parsing not enabled
+2020-06-15 23:13:31.361755 (MainThread): Parsing macros/most_recent_record.sql
+2020-06-15 23:13:31.365055 (MainThread): Parsing macros/similar_to.sql
+2020-06-15 23:13:31.366613 (MainThread): Parsing macros/timestamp_ntz.sql
+2020-06-15 23:13:31.368011 (MainThread): Parsing macros/url_query.sql
+2020-06-15 23:13:31.368731 (MainThread): Parsing macros/adapters/bigquery/identification/snowplow_id_map.sql
+2020-06-15 23:13:31.370665 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_page_views.sql
+2020-06-15 23:13:31.377260 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events.sql
+2020-06-15 23:13:31.378142 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events_internal_fixed.sql
+2020-06-15 23:13:31.378919 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events_scroll_depth.sql
+2020-06-15 23:13:31.379751 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events_time.sql
+2020-06-15 23:13:31.380585 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_page_context.sql
+2020-06-15 23:13:31.380986 (MainThread): Parsing macros/adapters/bigquery/sessions/snowplow_sessions.sql
+2020-06-15 23:13:31.383113 (MainThread): Parsing macros/adapters/bigquery/sessions/snowplow_sessions_tmp.sql
+2020-06-15 23:13:31.386493 (MainThread): Parsing macros/adapters/default/identification/snowplow_id_map.sql
+2020-06-15 23:13:31.388836 (MainThread): Parsing macros/adapters/default/page_views/snowplow_page_views.sql
+2020-06-15 23:13:31.406715 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events.sql
+2020-06-15 23:13:31.410459 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events_internal_fixed.sql
+2020-06-15 23:13:31.414159 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events_scroll_depth.sql
+2020-06-15 23:13:31.418293 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events_time.sql
+2020-06-15 23:13:31.422066 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_page_context.sql
+2020-06-15 23:13:31.423648 (MainThread): Parsing macros/adapters/default/sessions/snowplow_sessions.sql
+2020-06-15 23:13:31.426771 (MainThread): Parsing macros/adapters/default/sessions/snowplow_sessions_tmp.sql
+2020-06-15 23:13:31.468468 (MainThread): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 23:13:31.468639 (MainThread): Opening a new connection, currently in state init
+2020-06-15 23:13:31.497252 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 23:13:31.497404 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.508526 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 23:13:31.508711 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.669448 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_events".
+2020-06-15 23:13:31.669611 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.686169 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_web_page_context".
+2020-06-15 23:13:31.686324 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.700875 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_performance_timing_context".
+2020-06-15 23:13:31.701028 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.719406 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_useragent_context".
+2020-06-15 23:13:31.719594 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.737218 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_id_map".
+2020-06-15 23:13:31.737399 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.761567 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_page_views".
+2020-06-15 23:13:31.761744 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.783816 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events".
+2020-06-15 23:13:31.783970 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.800846 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events_internal_fixed".
+2020-06-15 23:13:31.801002 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.817358 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events_scroll_depth".
+2020-06-15 23:13:31.817512 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.834245 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events_time".
+2020-06-15 23:13:31.834401 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.850789 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_page_context".
+2020-06-15 23:13:31.850947 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.869757 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_timing_context".
+2020-06-15 23:13:31.869914 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.887023 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_ua_parser_context".
+2020-06-15 23:13:31.887179 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.908066 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_sessions".
+2020-06-15 23:13:31.908231 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:31.926852 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_sessions_tmp".
+2020-06-15 23:13:31.927014 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:32.661167 (MainThread): WARNING: Found documentation for resource "snowplow_web_events" which was not found or is disabled
+2020-06-15 23:13:32.661421 (MainThread): WARNING: Found documentation for resource "snowplow_web_events_time" which was not found or is disabled
+2020-06-15 23:13:32.661517 (MainThread): WARNING: Found documentation for resource "snowplow_web_events_scroll_depth" which was not found or is disabled
+2020-06-15 23:13:32.661927 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_domain_userid' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:13:32.662033 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_collector_tstamp' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:13:32.662119 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_domain_sessionid' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:13:32.662201 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:13:32.662278 (MainThread): WARNING: Test 'test.snowplow.unique_snowplow_web_events_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:13:32.662365 (MainThread): WARNING: Test 'test.snowplow.relationships_snowplow_web_events_page_view_id__page_view_id__ref_snowplow_web_page_context_' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:13:32.662444 (MainThread): WARNING: Test 'test.snowplow.unique_snowplow_web_events_time_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_time' which is disabled
+2020-06-15 23:13:32.662545 (MainThread): WARNING: Test 'test.snowplow.relationships_snowplow_web_events_time_page_view_id__page_view_id__ref_snowplow_web_page_context_' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_time' which is disabled
+2020-06-15 23:13:32.662632 (MainThread): WARNING: Test 'test.snowplow.unique_snowplow_web_events_scroll_depth_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_scroll_depth' which is disabled
+2020-06-15 23:13:32.662737 (MainThread): WARNING: Test 'test.snowplow.relationships_snowplow_web_events_scroll_depth_page_view_id__page_view_id__ref_snowplow_web_page_context_' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_scroll_depth' which is disabled
+2020-06-15 23:13:32.868711 (MainThread): Found 10 models, 16 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 1 seed file, 0 sources
+2020-06-15 23:13:32.870617 (MainThread): 
+2020-06-15 23:13:32.871006 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:13:32.871102 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:32.920819 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_mlab-recreate_dbt_pipeline_deposit".
+2020-06-15 23:13:32.920994 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2020-06-15 23:13:32.921727 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 23:13:33.458427 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:13:33.458944 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:33.459898 (MainThread): 16:13:33 | Concurrency: 1 threads (target='dev')
+2020-06-15 23:13:33.462512 (MainThread): 16:13:33 | 
+2020-06-15 23:13:33.471199 (Thread-1): Began running node model.snowplow.snowplow_base_events
+2020-06-15 23:13:33.473300 (Thread-1): Acquiring new bigquery connection "model.snowplow.snowplow_base_events".
+2020-06-15 23:13:33.474082 (Thread-1): Re-using an available connection from the pool (formerly list_mlab-recreate_dbt_pipeline_deposit).
+2020-06-15 23:13:33.474503 (Thread-1): Compiling model.snowplow.snowplow_base_events
+2020-06-15 23:13:33.541025 (Thread-1): finished collecting timing info
+2020-06-15 23:13:33.541682 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  Required var 'snowplow:events' not found in config:
+  Vars supplied to snowplow_base_events = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 228, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 165, in compile_and_execute
+    ctx.node = self.compile(manifest)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 340, in compile
+    return compile_node(self.adapter, self.config, self.node, manifest, {})
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 255, in compile_node
+    node = compiler.compile_node(node, manifest, extra_context)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 179, in compile_node
+    node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 530, in get_rendered
+    return render_template(template, ctx, node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 481, in render_template
+    return template.render(ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 3, in top-level template code
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 148, in __call__
+    return self.get_missing_var(var_name)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 129, in get_missing_var
+    raise_compiler_error(msg, self.node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/exceptions.py", line 392, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  Required var 'snowplow:events' not found in config:
+  Vars supplied to snowplow_base_events = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:13:33.543071 (Thread-1): Finished running node model.snowplow.snowplow_base_events
+2020-06-15 23:13:33.543227 (Thread-1): Began running node model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:33.543511 (Thread-1): Acquiring new bigquery connection "model.snowplow.snowplow_base_web_page_context".
+2020-06-15 23:13:33.543608 (Thread-1): Re-using an available connection from the pool (formerly model.snowplow.snowplow_base_events).
+2020-06-15 23:13:33.544159 (Thread-1): Compiling model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:33.549930 (Thread-1): finished collecting timing info
+2020-06-15 23:13:33.550401 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  Required var 'snowplow:context:web_page' not found in config:
+  Vars supplied to snowplow_base_web_page_context = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 228, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 165, in compile_and_execute
+    ctx.node = self.compile(manifest)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 340, in compile
+    return compile_node(self.adapter, self.config, self.node, manifest, {})
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 255, in compile_node
+    node = compiler.compile_node(node, manifest, extra_context)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 179, in compile_node
+    node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 530, in get_rendered
+    return render_template(template, ctx, node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 481, in render_template
+    return template.render(ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 1, in top-level template code
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 148, in __call__
+    return self.get_missing_var(var_name)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 129, in get_missing_var
+    raise_compiler_error(msg, self.node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/exceptions.py", line 392, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  Required var 'snowplow:context:web_page' not found in config:
+  Vars supplied to snowplow_base_web_page_context = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:33.550843 (Thread-1): Finished running node model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:33.550986 (Thread-1): Began running node test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:13:33.551117 (Thread-1): 16:13:33 | 1 of 16 START test not_null_my_first_dbt_model_id.................... [RUN]
+2020-06-15 23:13:33.552093 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_first_dbt_model_id".
+2020-06-15 23:13:33.552281 (Thread-1): Re-using an available connection from the pool (formerly model.snowplow.snowplow_base_web_page_context).
+2020-06-15 23:13:33.552443 (Thread-1): Compiling test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:13:33.571211 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id"
+2020-06-15 23:13:33.571565 (Thread-1): finished collecting timing info
+2020-06-15 23:13:33.571876 (Thread-1): On test.my_new_project.not_null_my_first_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.not_null_my_first_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+where id is null
+
+
+2020-06-15 23:13:34.574414 (Thread-1): finished collecting timing info
+2020-06-15 23:13:34.577115 (Thread-1): 16:13:34 | 1 of 16 FAIL 1 not_null_my_first_dbt_model_id........................ [FAIL 1 in 1.03s]
+2020-06-15 23:13:34.577930 (Thread-1): Finished running node test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:13:34.578884 (Thread-1): Began running node test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:13:34.582470 (Thread-1): 16:13:34 | 2 of 16 START test not_null_my_second_dbt_model_id................... [RUN]
+2020-06-15 23:13:34.585182 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_second_dbt_model_id".
+2020-06-15 23:13:34.586995 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.not_null_my_first_dbt_model_id).
+2020-06-15 23:13:34.588025 (Thread-1): Compiling test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:13:34.622889 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_second_dbt_model_id"
+2020-06-15 23:13:34.623344 (Thread-1): finished collecting timing info
+2020-06-15 23:13:34.623771 (Thread-1): On test.my_new_project.not_null_my_second_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.not_null_my_second_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+where id is null
+
+
+2020-06-15 23:13:35.803136 (Thread-1): finished collecting timing info
+2020-06-15 23:13:35.806906 (Thread-1): 16:13:35 | 2 of 16 PASS not_null_my_second_dbt_model_id......................... [PASS in 1.22s]
+2020-06-15 23:13:35.808013 (Thread-1): Finished running node test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:13:35.811232 (Thread-1): Began running node test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:13:35.814686 (Thread-1): 16:13:35 | 3 of 16 START test unique_my_first_dbt_model_id...................... [RUN]
+2020-06-15 23:13:35.817873 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_first_dbt_model_id".
+2020-06-15 23:13:35.819086 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.not_null_my_second_dbt_model_id).
+2020-06-15 23:13:35.820484 (Thread-1): Compiling test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:13:35.847418 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id"
+2020-06-15 23:13:35.848149 (Thread-1): finished collecting timing info
+2020-06-15 23:13:35.848675 (Thread-1): On test.my_new_project.unique_my_first_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.unique_my_first_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        id
+
+    from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+    where id is not null
+    group by id
+    having count(*) > 1
+
+) validation_errors
+
+
+2020-06-15 23:13:36.951799 (Thread-1): finished collecting timing info
+2020-06-15 23:13:36.953399 (Thread-1): 16:13:36 | 3 of 16 PASS unique_my_first_dbt_model_id............................ [PASS in 1.14s]
+2020-06-15 23:13:36.954031 (Thread-1): Finished running node test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:13:36.959358 (Thread-1): Began running node test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:13:36.960062 (Thread-1): 16:13:36 | 4 of 16 START test unique_my_second_dbt_model_id..................... [RUN]
+2020-06-15 23:13:36.961347 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_second_dbt_model_id".
+2020-06-15 23:13:36.962477 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.unique_my_first_dbt_model_id).
+2020-06-15 23:13:36.963147 (Thread-1): Compiling test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:13:36.987267 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_second_dbt_model_id"
+2020-06-15 23:13:36.987792 (Thread-1): finished collecting timing info
+2020-06-15 23:13:36.988206 (Thread-1): On test.my_new_project.unique_my_second_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.unique_my_second_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        id
+
+    from `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+    where id is not null
+    group by id
+    having count(*) > 1
+
+) validation_errors
+
+
+2020-06-15 23:13:37.917629 (Thread-1): finished collecting timing info
+2020-06-15 23:13:37.919159 (Thread-1): 16:13:37 | 4 of 16 PASS unique_my_second_dbt_model_id........................... [PASS in 0.96s]
+2020-06-15 23:13:37.919620 (Thread-1): Finished running node test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:13:37.921880 (Thread-1): Began running node test.snowplow.not_null_snowplow_base_events_app_id
+2020-06-15 23:13:37.922544 (Thread-1): 16:13:37 | 5 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_base_events_app_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.925194 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:13:37.925463 (Thread-1):   Required var 'snowplow:events' not found in config:
+2020-06-15 23:13:37.925588 (Thread-1):   Vars supplied to snowplow_base_events = {
+2020-06-15 23:13:37.925796 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.926316 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.926797 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.927856 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.928276 (Thread-1):   }
+2020-06-15 23:13:37.928545 (Thread-1):   
+2020-06-15 23:13:37.928835 (Thread-1):   > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:13:37.929081 (Thread-1):   > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:13:37.929430 (Thread-1): Finished running node test.snowplow.not_null_snowplow_base_events_app_id
+2020-06-15 23:13:37.930037 (Thread-1): Began running node test.snowplow.not_null_snowplow_base_events_event_id
+2020-06-15 23:13:37.932412 (Thread-1): 16:13:37 | 6 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_base_events_event_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.933658 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:13:37.934308 (Thread-1):   Required var 'snowplow:events' not found in config:
+2020-06-15 23:13:37.934831 (Thread-1):   Vars supplied to snowplow_base_events = {
+2020-06-15 23:13:37.935576 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.936403 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.937086 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.937432 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.937763 (Thread-1):   }
+2020-06-15 23:13:37.937965 (Thread-1):   
+2020-06-15 23:13:37.938278 (Thread-1):   > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:13:37.938616 (Thread-1):   > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:13:37.939068 (Thread-1): Finished running node test.snowplow.not_null_snowplow_base_events_event_id
+2020-06-15 23:13:37.939421 (Thread-1): Began running node test.snowplow.unique_snowplow_base_events_event_id
+2020-06-15 23:13:37.940086 (Thread-1): 16:13:37 | 7 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_base_events_event_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.940419 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:13:37.940754 (Thread-1):   Required var 'snowplow:events' not found in config:
+2020-06-15 23:13:37.941094 (Thread-1):   Vars supplied to snowplow_base_events = {
+2020-06-15 23:13:37.941437 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.941742 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.942041 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.942287 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.942517 (Thread-1):   }
+2020-06-15 23:13:37.942813 (Thread-1):   
+2020-06-15 23:13:37.943026 (Thread-1):   > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:13:37.943252 (Thread-1):   > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:13:37.943555 (Thread-1): Finished running node test.snowplow.unique_snowplow_base_events_event_id
+2020-06-15 23:13:37.943941 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_page_view_id
+2020-06-15 23:13:37.944473 (Thread-1): 16:13:37 | 8 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_page_view_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.944819 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.945124 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:13:37.945450 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:13:37.945661 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.945955 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.946274 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.946589 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.946930 (Thread-1):   }
+2020-06-15 23:13:37.947215 (Thread-1):   
+2020-06-15 23:13:37.947522 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.947865 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.948247 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_page_view_id
+2020-06-15 23:13:37.948618 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_session_id
+2020-06-15 23:13:37.949201 (Thread-1): 16:13:37 | 9 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_session_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.949481 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.949764 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:13:37.950104 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:13:37.950395 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.950716 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.951014 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.951309 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.951605 (Thread-1):   }
+2020-06-15 23:13:37.951920 (Thread-1):   
+2020-06-15 23:13:37.952209 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.952490 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.952881 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_session_id
+2020-06-15 23:13:37.953265 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_session_index
+2020-06-15 23:13:37.953586 (Thread-1): 16:13:37 | 10 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_session_index due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.953946 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.954139 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:13:37.954320 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:13:37.954552 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.955218 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.955423 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.955578 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.955814 (Thread-1):   }
+2020-06-15 23:13:37.956034 (Thread-1):   
+2020-06-15 23:13:37.956251 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.956471 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.956823 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_session_index
+2020-06-15 23:13:37.957222 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_user_snowplow_domain_id
+2020-06-15 23:13:37.958430 (Thread-1): 16:13:37 | 11 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_user_snowplow_domain_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.958886 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.959200 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:13:37.959458 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:13:37.959745 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.960043 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.960455 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.960819 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.961007 (Thread-1):   }
+2020-06-15 23:13:37.961169 (Thread-1):   
+2020-06-15 23:13:37.961342 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.961494 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.961765 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_user_snowplow_domain_id
+2020-06-15 23:13:37.962846 (Thread-1): Began running node test.snowplow.not_null_snowplow_sessions_session_id
+2020-06-15 23:13:37.963181 (Thread-1): 16:13:37 | 12 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_sessions_session_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.963359 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.963471 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:13:37.963564 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:13:37.963710 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.964176 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.964417 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.964713 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.964923 (Thread-1):   }
+2020-06-15 23:13:37.965114 (Thread-1):   
+2020-06-15 23:13:37.965303 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.965480 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.965777 (Thread-1): Finished running node test.snowplow.not_null_snowplow_sessions_session_id
+2020-06-15 23:13:37.966132 (Thread-1): Began running node test.snowplow.not_null_snowplow_web_page_context_page_view_id
+2020-06-15 23:13:37.966468 (Thread-1): 16:13:37 | 13 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_web_page_context_page_view_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.966742 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.966936 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:13:37.967093 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:13:37.967237 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.967378 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.967536 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.967719 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.968027 (Thread-1):   }
+2020-06-15 23:13:37.968177 (Thread-1):   
+2020-06-15 23:13:37.968270 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.968357 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.968611 (Thread-1): Finished running node test.snowplow.not_null_snowplow_web_page_context_page_view_id
+2020-06-15 23:13:37.968937 (Thread-1): Began running node test.snowplow.unique_snowplow_page_views_page_view_id
+2020-06-15 23:13:37.969294 (Thread-1): 16:13:37 | 14 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_page_views_page_view_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.969571 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.969816 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:13:37.970010 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:13:37.970204 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.970401 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.970604 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.970819 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.970988 (Thread-1):   }
+2020-06-15 23:13:37.971140 (Thread-1):   
+2020-06-15 23:13:37.971303 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.971651 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.972245 (Thread-1): Finished running node test.snowplow.unique_snowplow_page_views_page_view_id
+2020-06-15 23:13:37.972669 (Thread-1): Began running node test.snowplow.unique_snowplow_sessions_session_id
+2020-06-15 23:13:37.974819 (Thread-1): 16:13:37 | 15 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_sessions_session_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.976269 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.976562 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:13:37.976796 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:13:37.976992 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.977173 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.977342 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.977503 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.977725 (Thread-1):   }
+2020-06-15 23:13:37.977929 (Thread-1):   
+2020-06-15 23:13:37.978120 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.978305 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.978549 (Thread-1): Finished running node test.snowplow.unique_snowplow_sessions_session_id
+2020-06-15 23:13:37.978882 (Thread-1): Began running node test.snowplow.unique_snowplow_web_page_context_concat_page_view_id_root_id_
+2020-06-15 23:13:37.979178 (Thread-1): 16:13:37 | 16 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_web_page_context_concat_page_view_id_root_id_ due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:13:37.979412 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.979587 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:13:37.981361 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:13:37.981653 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:13:37.981965 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:13:37.982172 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:13:37.982381 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:13:37.982713 (Thread-1):   }
+2020-06-15 23:13:37.982969 (Thread-1):   
+2020-06-15 23:13:37.994483 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.994907 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:13:37.995196 (Thread-1): Finished running node test.snowplow.unique_snowplow_web_page_context_concat_page_view_id_root_id_
+2020-06-15 23:13:38.027321 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:13:38.027541 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:13:38.028000 (MainThread): 16:13:38 | 
+2020-06-15 23:13:38.028176 (MainThread): 16:13:38 | Finished running 16 tests in 5.16s.
+2020-06-15 23:13:38.028332 (MainThread): Connection 'master' was properly closed.
+2020-06-15 23:13:38.028472 (MainThread): Connection 'test.my_new_project.unique_my_second_dbt_model_id' was left open.
+2020-06-15 23:13:38.072969 (MainThread): 
+2020-06-15 23:13:38.074547 (MainThread): Completed with 13 errors and 0 warnings:
+2020-06-15 23:13:38.074819 (MainThread): 
+2020-06-15 23:13:38.074996 (MainThread): Failure in test not_null_my_first_dbt_model_id (models/example/schema.yml)
+2020-06-15 23:13:38.075156 (MainThread):   Got 1 result, expected 0.
+2020-06-15 23:13:38.075281 (MainThread): 
+2020-06-15 23:13:38.075443 (MainThread):   compiled SQL at target/compiled/my_new_project/models/example/schema.yml/schema_test/not_null_my_first_dbt_model_id.sql
+2020-06-15 23:13:38.075610 (MainThread): 
+2020-06-15 23:13:38.075844 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_base_events_app_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_events
+2020-06-15 23:13:38.076028 (MainThread): 
+2020-06-15 23:13:38.076191 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_base_events_event_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_events
+2020-06-15 23:13:38.076388 (MainThread): 
+2020-06-15 23:13:38.076527 (MainThread): Compilation Error in test.snowplow.unique_snowplow_base_events_event_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_events
+2020-06-15 23:13:38.076654 (MainThread): 
+2020-06-15 23:13:38.076788 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_page_view_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:38.076900 (MainThread): 
+2020-06-15 23:13:38.077009 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_session_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:38.077117 (MainThread): 
+2020-06-15 23:13:38.077224 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_session_index, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:38.077331 (MainThread): 
+2020-06-15 23:13:38.077434 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_user_snowplow_domain_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:38.077536 (MainThread): 
+2020-06-15 23:13:38.077634 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_sessions_session_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:38.077776 (MainThread): 
+2020-06-15 23:13:38.077933 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_web_page_context_page_view_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:38.078097 (MainThread): 
+2020-06-15 23:13:38.078282 (MainThread): Compilation Error in test.snowplow.unique_snowplow_page_views_page_view_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:38.078475 (MainThread): 
+2020-06-15 23:13:38.078590 (MainThread): Compilation Error in test.snowplow.unique_snowplow_sessions_session_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:38.078774 (MainThread): 
+2020-06-15 23:13:38.078961 (MainThread): Compilation Error in test.snowplow.unique_snowplow_web_page_context_concat_page_view_id_root_id_, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:13:38.079184 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=13 SKIP=0 TOTAL=16
+2020-06-15 23:13:38.079603 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5acb02a940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5acaf091d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c5acaf79160>]}
+2020-06-15 23:13:38.080002 (MainThread): Flushing usage events
+2020-06-15 23:14:04.204385 (MainThread): Running with dbt=0.17.0
+2020-06-15 23:14:04.439589 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, strict=False, target=None, test_new_parser=False, use_cache=True, vars='{}', warn_error=False, which='deps', write_json=True)
+2020-06-15 23:14:04.440032 (MainThread): Tracking: tracking
+2020-06-15 23:14:04.445156 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e7e807e0e48>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e7e8061f668>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e7e7f385278>]}
+2020-06-15 23:14:04.445785 (MainThread): Warning: No packages were found in packages.yml
+2020-06-15 23:14:04.446077 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e7e7f3c6588>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e7e807e0e48>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e7e7f385198>]}
+2020-06-15 23:14:04.446482 (MainThread): Flushing usage events
+2020-06-15 23:14:07.771793 (MainThread): Running with dbt=0.17.0
+2020-06-15 23:14:08.073129 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2020-06-15 23:14:08.073837 (MainThread): Tracking: tracking
+2020-06-15 23:14:08.080403 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793e28624198>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793e298bc518>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793e28624438>]}
+2020-06-15 23:14:08.140149 (MainThread): Partial parsing not enabled
+2020-06-15 23:14:08.141924 (MainThread): Parsing macros/core.sql
+2020-06-15 23:14:08.147431 (MainThread): Parsing macros/adapters/common.sql
+2020-06-15 23:14:08.255163 (MainThread): Parsing macros/etc/datetime.sql
+2020-06-15 23:14:08.279414 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-06-15 23:14:08.281808 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-06-15 23:14:08.286135 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-06-15 23:14:08.291057 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-06-15 23:14:08.295202 (MainThread): Parsing macros/etc/query.sql
+2020-06-15 23:14:08.298060 (MainThread): Parsing macros/materializations/helpers.sql
+2020-06-15 23:14:08.315636 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-06-15 23:14:08.331882 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-06-15 23:14:08.334157 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-06-15 23:14:08.341492 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-06-15 23:14:08.364566 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-15 23:14:08.422813 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-15 23:14:08.426644 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-15 23:14:08.451831 (MainThread): Parsing macros/materializations/table/table.sql
+2020-06-15 23:14:08.459489 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-15 23:14:08.465547 (MainThread): Parsing macros/materializations/view/view.sql
+2020-06-15 23:14:08.472519 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-06-15 23:14:08.475128 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-06-15 23:14:08.476300 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-06-15 23:14:08.477578 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-06-15 23:14:08.479179 (MainThread): Parsing macros/adapters.sql
+2020-06-15 23:14:08.501896 (MainThread): Parsing macros/catalog.sql
+2020-06-15 23:14:08.509543 (MainThread): Parsing macros/etc.sql
+2020-06-15 23:14:08.510475 (MainThread): Parsing macros/materializations/incremental.sql
+2020-06-15 23:14:08.525992 (MainThread): Parsing macros/materializations/seed.sql
+2020-06-15 23:14:08.531003 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-06-15 23:14:08.535864 (MainThread): Parsing macros/materializations/table.sql
+2020-06-15 23:14:08.561984 (MainThread): Parsing macros/materializations/view.sql
+2020-06-15 23:14:08.654204 (MainThread): * Deprecation Warning: dbt v0.17.0 introduces a new config format for the
+dbt_project.yml file. Support for the existing version 1 format will be removed
+in a future release of dbt. The following packages are currently configured with
+config version 1:
+ - snowplow
+
+For upgrading instructions, consult the documentation:
+  https://docs.getdbt.com/docs/guides/migration-guide/upgrading-to-0-17-0
+2020-06-15 23:14:08.655123 (MainThread): Partial parsing not enabled
+2020-06-15 23:14:08.657442 (MainThread): Parsing macros/most_recent_record.sql
+2020-06-15 23:14:08.663745 (MainThread): Parsing macros/similar_to.sql
+2020-06-15 23:14:08.666885 (MainThread): Parsing macros/timestamp_ntz.sql
+2020-06-15 23:14:08.669852 (MainThread): Parsing macros/url_query.sql
+2020-06-15 23:14:08.671356 (MainThread): Parsing macros/adapters/bigquery/identification/snowplow_id_map.sql
+2020-06-15 23:14:08.676663 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_page_views.sql
+2020-06-15 23:14:08.694357 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events.sql
+2020-06-15 23:14:08.695822 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events_internal_fixed.sql
+2020-06-15 23:14:08.696677 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events_scroll_depth.sql
+2020-06-15 23:14:08.697470 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_events_time.sql
+2020-06-15 23:14:08.698430 (MainThread): Parsing macros/adapters/bigquery/pageviews/snowplow_web_page_context.sql
+2020-06-15 23:14:08.698686 (MainThread): Parsing macros/adapters/bigquery/sessions/snowplow_sessions.sql
+2020-06-15 23:14:08.700039 (MainThread): Parsing macros/adapters/bigquery/sessions/snowplow_sessions_tmp.sql
+2020-06-15 23:14:08.703463 (MainThread): Parsing macros/adapters/default/identification/snowplow_id_map.sql
+2020-06-15 23:14:08.706084 (MainThread): Parsing macros/adapters/default/page_views/snowplow_page_views.sql
+2020-06-15 23:14:08.723488 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events.sql
+2020-06-15 23:14:08.727936 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events_internal_fixed.sql
+2020-06-15 23:14:08.736525 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events_scroll_depth.sql
+2020-06-15 23:14:08.748823 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_events_time.sql
+2020-06-15 23:14:08.759262 (MainThread): Parsing macros/adapters/default/page_views/snowplow_web_page_context.sql
+2020-06-15 23:14:08.763089 (MainThread): Parsing macros/adapters/default/sessions/snowplow_sessions.sql
+2020-06-15 23:14:08.768768 (MainThread): Parsing macros/adapters/default/sessions/snowplow_sessions_tmp.sql
+2020-06-15 23:14:08.816753 (MainThread): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 23:14:08.816939 (MainThread): Opening a new connection, currently in state init
+2020-06-15 23:14:08.860861 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 23:14:08.861089 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:08.875572 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 23:14:08.875812 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.131463 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_events".
+2020-06-15 23:14:09.131724 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.167765 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_web_page_context".
+2020-06-15 23:14:09.168010 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.200113 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_performance_timing_context".
+2020-06-15 23:14:09.200342 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.234032 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_base_useragent_context".
+2020-06-15 23:14:09.234253 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.265507 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_id_map".
+2020-06-15 23:14:09.265738 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.316518 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_page_views".
+2020-06-15 23:14:09.316745 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.350750 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events".
+2020-06-15 23:14:09.350933 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.371597 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events_internal_fixed".
+2020-06-15 23:14:09.371870 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.395041 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events_scroll_depth".
+2020-06-15 23:14:09.395204 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.417245 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_events_time".
+2020-06-15 23:14:09.417476 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.439514 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_page_context".
+2020-06-15 23:14:09.439683 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.477600 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_timing_context".
+2020-06-15 23:14:09.477853 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.517961 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_web_ua_parser_context".
+2020-06-15 23:14:09.518215 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.557643 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_sessions".
+2020-06-15 23:14:09.557902 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:09.578291 (MainThread): Acquiring new bigquery connection "model.snowplow.snowplow_sessions_tmp".
+2020-06-15 23:14:09.578452 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:10.850384 (MainThread): WARNING: Found documentation for resource "snowplow_web_events" which was not found or is disabled
+2020-06-15 23:14:10.850627 (MainThread): WARNING: Found documentation for resource "snowplow_web_events_time" which was not found or is disabled
+2020-06-15 23:14:10.850790 (MainThread): WARNING: Found documentation for resource "snowplow_web_events_scroll_depth" which was not found or is disabled
+2020-06-15 23:14:10.851317 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_domain_userid' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:14:10.851446 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_collector_tstamp' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:14:10.851543 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_domain_sessionid' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:14:10.851630 (MainThread): WARNING: Test 'test.snowplow.not_null_snowplow_web_events_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:14:10.851732 (MainThread): WARNING: Test 'test.snowplow.unique_snowplow_web_events_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:14:10.851830 (MainThread): WARNING: Test 'test.snowplow.relationships_snowplow_web_events_page_view_id__page_view_id__ref_snowplow_web_page_context_' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events' which is disabled
+2020-06-15 23:14:10.851927 (MainThread): WARNING: Test 'test.snowplow.unique_snowplow_web_events_time_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_time' which is disabled
+2020-06-15 23:14:10.852027 (MainThread): WARNING: Test 'test.snowplow.relationships_snowplow_web_events_time_page_view_id__page_view_id__ref_snowplow_web_page_context_' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_time' which is disabled
+2020-06-15 23:14:10.852122 (MainThread): WARNING: Test 'test.snowplow.unique_snowplow_web_events_scroll_depth_page_view_id' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_scroll_depth' which is disabled
+2020-06-15 23:14:10.852272 (MainThread): WARNING: Test 'test.snowplow.relationships_snowplow_web_events_scroll_depth_page_view_id__page_view_id__ref_snowplow_web_page_context_' (models/page_views/schema.yml) depends on a node named 'snowplow_web_events_scroll_depth' which is disabled
+2020-06-15 23:14:11.237785 (MainThread): Found 10 models, 16 tests, 0 snapshots, 0 analyses, 181 macros, 0 operations, 1 seed file, 0 sources
+2020-06-15 23:14:11.240969 (MainThread): 
+2020-06-15 23:14:11.241567 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:14:11.241766 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:11.295769 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_mlab-recreate_dbt_pipeline_deposit".
+2020-06-15 23:14:11.296061 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2020-06-15 23:14:11.296729 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 23:14:11.851107 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:14:11.851285 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:11.851562 (MainThread): 16:14:11 | Concurrency: 1 threads (target='dev')
+2020-06-15 23:14:11.851764 (MainThread): 16:14:11 | 
+2020-06-15 23:14:11.860594 (Thread-1): Began running node model.snowplow.snowplow_base_events
+2020-06-15 23:14:11.861286 (Thread-1): Acquiring new bigquery connection "model.snowplow.snowplow_base_events".
+2020-06-15 23:14:11.861423 (Thread-1): Re-using an available connection from the pool (formerly list_mlab-recreate_dbt_pipeline_deposit).
+2020-06-15 23:14:11.861525 (Thread-1): Compiling model.snowplow.snowplow_base_events
+2020-06-15 23:14:11.920465 (Thread-1): finished collecting timing info
+2020-06-15 23:14:11.921209 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  Required var 'snowplow:events' not found in config:
+  Vars supplied to snowplow_base_events = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 228, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 165, in compile_and_execute
+    ctx.node = self.compile(manifest)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 340, in compile
+    return compile_node(self.adapter, self.config, self.node, manifest, {})
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 255, in compile_node
+    node = compiler.compile_node(node, manifest, extra_context)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 179, in compile_node
+    node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 530, in get_rendered
+    return render_template(template, ctx, node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 481, in render_template
+    return template.render(ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 3, in top-level template code
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 148, in __call__
+    return self.get_missing_var(var_name)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 129, in get_missing_var
+    raise_compiler_error(msg, self.node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/exceptions.py", line 392, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  Required var 'snowplow:events' not found in config:
+  Vars supplied to snowplow_base_events = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+  > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:14:11.922876 (Thread-1): Finished running node model.snowplow.snowplow_base_events
+2020-06-15 23:14:11.923054 (Thread-1): Began running node model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:11.923764 (Thread-1): Acquiring new bigquery connection "model.snowplow.snowplow_base_web_page_context".
+2020-06-15 23:14:11.924104 (Thread-1): Re-using an available connection from the pool (formerly model.snowplow.snowplow_base_events).
+2020-06-15 23:14:11.924264 (Thread-1): Compiling model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:11.930431 (Thread-1): finished collecting timing info
+2020-06-15 23:14:11.930973 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  Required var 'snowplow:context:web_page' not found in config:
+  Vars supplied to snowplow_base_web_page_context = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+Traceback (most recent call last):
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 228, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 165, in compile_and_execute
+    ctx.node = self.compile(manifest)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/node_runners.py", line 340, in compile
+    return compile_node(self.adapter, self.config, self.node, manifest, {})
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 255, in compile_node
+    node = compiler.compile_node(node, manifest, extra_context)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/compilation.py", line 179, in compile_node
+    node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 530, in get_rendered
+    return render_template(template, ctx, node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/clients/jinja.py", line 481, in render_template
+    return template.render(ctx)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 1, in top-level template code
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 148, in __call__
+    return self.get_missing_var(var_name)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/context/base.py", line 129, in get_missing_var
+    raise_compiler_error(msg, self.node)
+  File "/home/alfredoav/.local/lib/python3.7/site-packages/dbt/exceptions.py", line 392, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  Required var 'snowplow:context:web_page' not found in config:
+  Vars supplied to snowplow_base_web_page_context = {
+      "snowplow:app_ids": [],
+      "snowplow:page_ping_frequency": 30,
+      "snowplow:pass_through_columns": [],
+      "snowplow:timezone": "America/New_York"
+  }
+  
+  > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+  > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:11.931421 (Thread-1): Finished running node model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:11.931572 (Thread-1): Began running node test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:14:11.932163 (Thread-1): 16:14:11 | 1 of 16 START test not_null_my_first_dbt_model_id.................... [RUN]
+2020-06-15 23:14:11.932990 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_first_dbt_model_id".
+2020-06-15 23:14:11.933173 (Thread-1): Re-using an available connection from the pool (formerly model.snowplow.snowplow_base_web_page_context).
+2020-06-15 23:14:11.933313 (Thread-1): Compiling test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:14:11.950251 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id"
+2020-06-15 23:14:11.950632 (Thread-1): finished collecting timing info
+2020-06-15 23:14:11.950985 (Thread-1): On test.my_new_project.not_null_my_first_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.not_null_my_first_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+where id is null
+
+
+2020-06-15 23:14:12.971614 (Thread-1): finished collecting timing info
+2020-06-15 23:14:12.972301 (Thread-1): 16:14:12 | 1 of 16 FAIL 1 not_null_my_first_dbt_model_id........................ [FAIL 1 in 1.04s]
+2020-06-15 23:14:12.972502 (Thread-1): Finished running node test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:14:12.972652 (Thread-1): Began running node test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:14:12.972806 (Thread-1): 16:14:12 | 2 of 16 START test not_null_my_second_dbt_model_id................... [RUN]
+2020-06-15 23:14:12.973127 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_second_dbt_model_id".
+2020-06-15 23:14:12.973216 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.not_null_my_first_dbt_model_id).
+2020-06-15 23:14:12.973297 (Thread-1): Compiling test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:14:12.987720 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_second_dbt_model_id"
+2020-06-15 23:14:12.988179 (Thread-1): finished collecting timing info
+2020-06-15 23:14:12.988484 (Thread-1): On test.my_new_project.not_null_my_second_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.not_null_my_second_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+where id is null
+
+
+2020-06-15 23:14:14.206845 (Thread-1): finished collecting timing info
+2020-06-15 23:14:14.209598 (Thread-1): 16:14:14 | 2 of 16 PASS not_null_my_second_dbt_model_id......................... [PASS in 1.24s]
+2020-06-15 23:14:14.210567 (Thread-1): Finished running node test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:14:14.211406 (Thread-1): Began running node test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:14:14.213379 (Thread-1): 16:14:14 | 3 of 16 START test unique_my_first_dbt_model_id...................... [RUN]
+2020-06-15 23:14:14.216649 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_first_dbt_model_id".
+2020-06-15 23:14:14.217783 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.not_null_my_second_dbt_model_id).
+2020-06-15 23:14:14.218675 (Thread-1): Compiling test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:14:14.251898 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id"
+2020-06-15 23:14:14.252555 (Thread-1): finished collecting timing info
+2020-06-15 23:14:14.253128 (Thread-1): On test.my_new_project.unique_my_first_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.unique_my_first_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        id
+
+    from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+    where id is not null
+    group by id
+    having count(*) > 1
+
+) validation_errors
+
+
+2020-06-15 23:14:15.841599 (Thread-1): finished collecting timing info
+2020-06-15 23:14:15.844516 (Thread-1): 16:14:15 | 3 of 16 PASS unique_my_first_dbt_model_id............................ [PASS in 1.63s]
+2020-06-15 23:14:15.845463 (Thread-1): Finished running node test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:14:15.860457 (Thread-1): Began running node test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:14:15.862629 (Thread-1): 16:14:15 | 4 of 16 START test unique_my_second_dbt_model_id..................... [RUN]
+2020-06-15 23:14:15.864277 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_second_dbt_model_id".
+2020-06-15 23:14:15.864647 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.unique_my_first_dbt_model_id).
+2020-06-15 23:14:15.865206 (Thread-1): Compiling test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:14:15.882990 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_second_dbt_model_id"
+2020-06-15 23:14:15.883738 (Thread-1): finished collecting timing info
+2020-06-15 23:14:15.884221 (Thread-1): On test.my_new_project.unique_my_second_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.unique_my_second_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        id
+
+    from `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+    where id is not null
+    group by id
+    having count(*) > 1
+
+) validation_errors
+
+
+2020-06-15 23:14:17.597003 (Thread-1): finished collecting timing info
+2020-06-15 23:14:17.600432 (Thread-1): 16:14:17 | 4 of 16 PASS unique_my_second_dbt_model_id........................... [PASS in 1.74s]
+2020-06-15 23:14:17.601651 (Thread-1): Finished running node test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:14:17.602827 (Thread-1): Began running node test.snowplow.not_null_snowplow_base_events_app_id
+2020-06-15 23:14:17.604608 (Thread-1): 16:14:17 | 5 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_base_events_app_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.607272 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:14:17.609055 (Thread-1):   Required var 'snowplow:events' not found in config:
+2020-06-15 23:14:17.611290 (Thread-1):   Vars supplied to snowplow_base_events = {
+2020-06-15 23:14:17.612574 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.614026 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.615304 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.616613 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.617766 (Thread-1):   }
+2020-06-15 23:14:17.618396 (Thread-1):   
+2020-06-15 23:14:17.618824 (Thread-1):   > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:14:17.619174 (Thread-1):   > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:14:17.619559 (Thread-1): Finished running node test.snowplow.not_null_snowplow_base_events_app_id
+2020-06-15 23:14:17.620155 (Thread-1): Began running node test.snowplow.not_null_snowplow_base_events_event_id
+2020-06-15 23:14:17.620609 (Thread-1): 16:14:17 | 6 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_base_events_event_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.623511 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:14:17.625013 (Thread-1):   Required var 'snowplow:events' not found in config:
+2020-06-15 23:14:17.625392 (Thread-1):   Vars supplied to snowplow_base_events = {
+2020-06-15 23:14:17.625778 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.626220 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.626935 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.627265 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.627582 (Thread-1):   }
+2020-06-15 23:14:17.627928 (Thread-1):   
+2020-06-15 23:14:17.628310 (Thread-1):   > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:14:17.628668 (Thread-1):   > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:14:17.629092 (Thread-1): Finished running node test.snowplow.not_null_snowplow_base_events_event_id
+2020-06-15 23:14:17.629526 (Thread-1): Began running node test.snowplow.unique_snowplow_base_events_event_id
+2020-06-15 23:14:17.630199 (Thread-1): 16:14:17 | 7 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_base_events_event_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.630466 (Thread-1): Compilation Error in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:14:17.630760 (Thread-1):   Required var 'snowplow:events' not found in config:
+2020-06-15 23:14:17.631155 (Thread-1):   Vars supplied to snowplow_base_events = {
+2020-06-15 23:14:17.631450 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.631790 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.632092 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.632379 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.632719 (Thread-1):   }
+2020-06-15 23:14:17.633076 (Thread-1):   
+2020-06-15 23:14:17.633412 (Thread-1):   > in model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:14:17.633725 (Thread-1):   > called by model snowplow_base_events (models/base/snowplow_base_events.sql)
+2020-06-15 23:14:17.634136 (Thread-1): Finished running node test.snowplow.unique_snowplow_base_events_event_id
+2020-06-15 23:14:17.634470 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_page_view_id
+2020-06-15 23:14:17.634974 (Thread-1): 16:14:17 | 8 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_page_view_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.635161 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.635417 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:14:17.635779 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:14:17.636119 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.636410 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.636646 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.636925 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.637159 (Thread-1):   }
+2020-06-15 23:14:17.637400 (Thread-1):   
+2020-06-15 23:14:17.637628 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.637969 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.638312 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_page_view_id
+2020-06-15 23:14:17.638716 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_session_id
+2020-06-15 23:14:17.639587 (Thread-1): 16:14:17 | 9 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_session_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.640528 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.640761 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:14:17.640930 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:14:17.641076 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.641227 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.641362 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.641501 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.641643 (Thread-1):   }
+2020-06-15 23:14:17.641827 (Thread-1):   
+2020-06-15 23:14:17.641999 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.642244 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.642723 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_session_id
+2020-06-15 23:14:17.643253 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_session_index
+2020-06-15 23:14:17.643946 (Thread-1): 16:14:17 | 10 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_session_index due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.644193 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.644431 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:14:17.644750 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:14:17.645037 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.645310 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.645570 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.645844 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.646116 (Thread-1):   }
+2020-06-15 23:14:17.646387 (Thread-1):   
+2020-06-15 23:14:17.646627 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.646908 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.647249 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_session_index
+2020-06-15 23:14:17.647584 (Thread-1): Began running node test.snowplow.not_null_snowplow_page_views_user_snowplow_domain_id
+2020-06-15 23:14:17.648086 (Thread-1): 16:14:17 | 11 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_page_views_user_snowplow_domain_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.648311 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.648563 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:14:17.648842 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:14:17.649106 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.649347 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.649553 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.649769 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.649979 (Thread-1):   }
+2020-06-15 23:14:17.650163 (Thread-1):   
+2020-06-15 23:14:17.650349 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.650612 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.650991 (Thread-1): Finished running node test.snowplow.not_null_snowplow_page_views_user_snowplow_domain_id
+2020-06-15 23:14:17.651368 (Thread-1): Began running node test.snowplow.not_null_snowplow_sessions_session_id
+2020-06-15 23:14:17.651760 (Thread-1): 16:14:17 | 12 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_sessions_session_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.652116 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.652382 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:14:17.652613 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:14:17.653007 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.655468 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.655850 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.656233 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.656584 (Thread-1):   }
+2020-06-15 23:14:17.656834 (Thread-1):   
+2020-06-15 23:14:17.657150 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.657474 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.657799 (Thread-1): Finished running node test.snowplow.not_null_snowplow_sessions_session_id
+2020-06-15 23:14:17.658452 (Thread-1): Began running node test.snowplow.not_null_snowplow_web_page_context_page_view_id
+2020-06-15 23:14:17.659098 (Thread-1): 16:14:17 | 13 of 16 SKIP relation dbt_pipeline_deposit.not_null_snowplow_web_page_context_page_view_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.659425 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.659769 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:14:17.660091 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:14:17.660362 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.660631 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.660905 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.661191 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.661451 (Thread-1):   }
+2020-06-15 23:14:17.661713 (Thread-1):   
+2020-06-15 23:14:17.661998 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.662273 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.662631 (Thread-1): Finished running node test.snowplow.not_null_snowplow_web_page_context_page_view_id
+2020-06-15 23:14:17.662939 (Thread-1): Began running node test.snowplow.unique_snowplow_page_views_page_view_id
+2020-06-15 23:14:17.663437 (Thread-1): 16:14:17 | 14 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_page_views_page_view_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.663666 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.663853 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:14:17.664050 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:14:17.664587 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.664932 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.665240 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.665561 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.665853 (Thread-1):   }
+2020-06-15 23:14:17.666276 (Thread-1):   
+2020-06-15 23:14:17.666479 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.666648 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.666873 (Thread-1): Finished running node test.snowplow.unique_snowplow_page_views_page_view_id
+2020-06-15 23:14:17.667151 (Thread-1): Began running node test.snowplow.unique_snowplow_sessions_session_id
+2020-06-15 23:14:17.667700 (Thread-1): 16:14:17 | 15 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_sessions_session_id due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.667946 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.668121 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:14:17.668286 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:14:17.668444 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.668638 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.668806 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.668965 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.669119 (Thread-1):   }
+2020-06-15 23:14:17.669282 (Thread-1):   
+2020-06-15 23:14:17.669414 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.669543 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.671892 (Thread-1): Finished running node test.snowplow.unique_snowplow_sessions_session_id
+2020-06-15 23:14:17.672392 (Thread-1): Began running node test.snowplow.unique_snowplow_web_page_context_concat_page_view_id_root_id_
+2020-06-15 23:14:17.673329 (Thread-1): 16:14:17 | 16 of 16 SKIP relation dbt_pipeline_deposit.unique_snowplow_web_page_context_concat_page_view_id_root_id_ due to ephemeral model error [ERROR SKIP]
+2020-06-15 23:14:17.675520 (Thread-1): Compilation Error in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.675861 (Thread-1):   Required var 'snowplow:context:web_page' not found in config:
+2020-06-15 23:14:17.676072 (Thread-1):   Vars supplied to snowplow_base_web_page_context = {
+2020-06-15 23:14:17.676240 (Thread-1):       "snowplow:app_ids": [],
+2020-06-15 23:14:17.676425 (Thread-1):       "snowplow:page_ping_frequency": 30,
+2020-06-15 23:14:17.676591 (Thread-1):       "snowplow:pass_through_columns": [],
+2020-06-15 23:14:17.676747 (Thread-1):       "snowplow:timezone": "America/New_York"
+2020-06-15 23:14:17.676913 (Thread-1):   }
+2020-06-15 23:14:17.677217 (Thread-1):   
+2020-06-15 23:14:17.678155 (Thread-1):   > in model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.678342 (Thread-1):   > called by model snowplow_base_web_page_context (models/base/snowplow_base_web_page_context.sql)
+2020-06-15 23:14:17.678601 (Thread-1): Finished running node test.snowplow.unique_snowplow_web_page_context_concat_page_view_id_root_id_
+2020-06-15 23:14:17.700487 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:14:17.700683 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:14:17.701058 (MainThread): 16:14:17 | 
+2020-06-15 23:14:17.701242 (MainThread): 16:14:17 | Finished running 16 tests in 6.46s.
+2020-06-15 23:14:17.701399 (MainThread): Connection 'master' was properly closed.
+2020-06-15 23:14:17.701518 (MainThread): Connection 'test.my_new_project.unique_my_second_dbt_model_id' was left open.
+2020-06-15 23:14:17.744411 (MainThread): 
+2020-06-15 23:14:17.744644 (MainThread): Completed with 13 errors and 0 warnings:
+2020-06-15 23:14:17.744816 (MainThread): 
+2020-06-15 23:14:17.745010 (MainThread): Failure in test not_null_my_first_dbt_model_id (models/example/schema.yml)
+2020-06-15 23:14:17.745212 (MainThread):   Got 1 result, expected 0.
+2020-06-15 23:14:17.745376 (MainThread): 
+2020-06-15 23:14:17.745538 (MainThread):   compiled SQL at target/compiled/my_new_project/models/example/schema.yml/schema_test/not_null_my_first_dbt_model_id.sql
+2020-06-15 23:14:17.745713 (MainThread): 
+2020-06-15 23:14:17.745910 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_base_events_app_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_events
+2020-06-15 23:14:17.746132 (MainThread): 
+2020-06-15 23:14:17.746344 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_base_events_event_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_events
+2020-06-15 23:14:17.746569 (MainThread): 
+2020-06-15 23:14:17.746808 (MainThread): Compilation Error in test.snowplow.unique_snowplow_base_events_event_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_events
+2020-06-15 23:14:17.747033 (MainThread): 
+2020-06-15 23:14:17.747238 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_page_view_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:17.747396 (MainThread): 
+2020-06-15 23:14:17.747556 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_session_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:17.747774 (MainThread): 
+2020-06-15 23:14:17.747979 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_session_index, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:17.748168 (MainThread): 
+2020-06-15 23:14:17.748348 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_page_views_user_snowplow_domain_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:17.748529 (MainThread): 
+2020-06-15 23:14:17.748679 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_sessions_session_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:17.748847 (MainThread): 
+2020-06-15 23:14:17.748998 (MainThread): Compilation Error in test.snowplow.not_null_snowplow_web_page_context_page_view_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:17.749152 (MainThread): 
+2020-06-15 23:14:17.749299 (MainThread): Compilation Error in test.snowplow.unique_snowplow_page_views_page_view_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:17.749491 (MainThread): 
+2020-06-15 23:14:17.749712 (MainThread): Compilation Error in test.snowplow.unique_snowplow_sessions_session_id, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:17.749921 (MainThread): 
+2020-06-15 23:14:17.750101 (MainThread): Compilation Error in test.snowplow.unique_snowplow_web_page_context_concat_page_view_id_root_id_, caused by compilation error in referenced ephemeral model model.snowplow.snowplow_base_web_page_context
+2020-06-15 23:14:17.750300 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=13 SKIP=0 TOTAL=16
+2020-06-15 23:14:17.750580 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793e2844acc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793e28291860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x793e28361748>]}
+2020-06-15 23:14:17.750903 (MainThread): Flushing usage events
+2020-06-15 23:15:44.744123 (MainThread): Running with dbt=0.17.0
+2020-06-15 23:15:44.978909 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, strict=False, target=None, test_new_parser=False, use_cache=True, vars='{}', warn_error=False, which='deps', write_json=True)
+2020-06-15 23:15:44.979341 (MainThread): Tracking: tracking
+2020-06-15 23:15:44.984217 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbacc436c88>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbacc1f56d8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbacaf5c240>]}
+2020-06-15 23:15:44.984864 (MainThread): Warning: No packages were found in packages.yml
+2020-06-15 23:15:44.985136 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbacaf46fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbacc436c88>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bbacaf5c160>]}
+2020-06-15 23:15:44.985455 (MainThread): Flushing usage events
+2020-06-15 23:15:51.400484 (MainThread): Running with dbt=0.17.0
+2020-06-15 23:15:51.640813 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/alfredoav/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2020-06-15 23:15:51.641262 (MainThread): Tracking: tracking
+2020-06-15 23:15:51.647037 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79ec69ff7198>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79ec6b291438>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79ec69ff7438>]}
+2020-06-15 23:15:51.703094 (MainThread): Partial parsing not enabled
+2020-06-15 23:15:51.705210 (MainThread): Parsing macros/core.sql
+2020-06-15 23:15:51.712096 (MainThread): Parsing macros/adapters/common.sql
+2020-06-15 23:15:51.770027 (MainThread): Parsing macros/etc/datetime.sql
+2020-06-15 23:15:51.779544 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-06-15 23:15:51.780726 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-06-15 23:15:51.782494 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-06-15 23:15:51.784610 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-06-15 23:15:51.786314 (MainThread): Parsing macros/etc/query.sql
+2020-06-15 23:15:51.787450 (MainThread): Parsing macros/materializations/helpers.sql
+2020-06-15 23:15:51.795758 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-06-15 23:15:51.810816 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-06-15 23:15:51.813048 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-06-15 23:15:51.819666 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-06-15 23:15:51.841778 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-06-15 23:15:51.871284 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-06-15 23:15:51.873321 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-06-15 23:15:51.890747 (MainThread): Parsing macros/materializations/table/table.sql
+2020-06-15 23:15:51.903016 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-06-15 23:15:51.909186 (MainThread): Parsing macros/materializations/view/view.sql
+2020-06-15 23:15:51.915702 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-06-15 23:15:51.917820 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-06-15 23:15:51.918845 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-06-15 23:15:51.920287 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-06-15 23:15:51.921883 (MainThread): Parsing macros/adapters.sql
+2020-06-15 23:15:51.939544 (MainThread): Parsing macros/catalog.sql
+2020-06-15 23:15:51.946533 (MainThread): Parsing macros/etc.sql
+2020-06-15 23:15:51.947794 (MainThread): Parsing macros/materializations/incremental.sql
+2020-06-15 23:15:51.962680 (MainThread): Parsing macros/materializations/seed.sql
+2020-06-15 23:15:51.964981 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-06-15 23:15:51.966938 (MainThread): Parsing macros/materializations/table.sql
+2020-06-15 23:15:51.977870 (MainThread): Parsing macros/materializations/view.sql
+2020-06-15 23:15:52.001959 (MainThread): Partial parsing not enabled
+2020-06-15 23:15:52.037303 (MainThread): Acquiring new bigquery connection "model.my_new_project.sample".
+2020-06-15 23:15:52.037465 (MainThread): Opening a new connection, currently in state init
+2020-06-15 23:15:52.066381 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2020-06-15 23:15:52.066542 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:15:52.078281 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2020-06-15 23:15:52.078438 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:15:52.273934 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 147 macros, 0 operations, 0 seed files, 0 sources
+2020-06-15 23:15:52.274934 (MainThread): 
+2020-06-15 23:15:52.275560 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:15:52.275737 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:15:52.286287 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_mlab-recreate_dbt_pipeline_deposit".
+2020-06-15 23:15:52.286566 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2020-06-15 23:15:52.287161 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-06-15 23:15:52.830189 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:15:52.830798 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:15:52.831878 (MainThread): 16:15:52 | Concurrency: 1 threads (target='dev')
+2020-06-15 23:15:52.834115 (MainThread): 16:15:52 | 
+2020-06-15 23:15:52.844573 (Thread-1): Began running node test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:15:52.845948 (Thread-1): 16:15:52 | 1 of 4 START test not_null_my_first_dbt_model_id..................... [RUN]
+2020-06-15 23:15:52.850004 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_first_dbt_model_id".
+2020-06-15 23:15:52.850417 (Thread-1): Re-using an available connection from the pool (formerly list_mlab-recreate_dbt_pipeline_deposit).
+2020-06-15 23:15:52.850846 (Thread-1): Compiling test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:15:52.883854 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_first_dbt_model_id"
+2020-06-15 23:15:52.884310 (Thread-1): finished collecting timing info
+2020-06-15 23:15:52.884661 (Thread-1): On test.my_new_project.not_null_my_first_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.not_null_my_first_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+where id is null
+
+
+2020-06-15 23:15:54.861949 (Thread-1): finished collecting timing info
+2020-06-15 23:15:54.865295 (Thread-1): 16:15:54 | 1 of 4 FAIL 1 not_null_my_first_dbt_model_id......................... [FAIL 1 in 2.02s]
+2020-06-15 23:15:54.866188 (Thread-1): Finished running node test.my_new_project.not_null_my_first_dbt_model_id
+2020-06-15 23:15:54.867078 (Thread-1): Began running node test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:15:54.872566 (Thread-1): 16:15:54 | 2 of 4 START test not_null_my_second_dbt_model_id.................... [RUN]
+2020-06-15 23:15:54.875986 (Thread-1): Acquiring new bigquery connection "test.my_new_project.not_null_my_second_dbt_model_id".
+2020-06-15 23:15:54.877327 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.not_null_my_first_dbt_model_id).
+2020-06-15 23:15:54.881037 (Thread-1): Compiling test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:15:54.914971 (Thread-1): Writing injected SQL for node "test.my_new_project.not_null_my_second_dbt_model_id"
+2020-06-15 23:15:54.915579 (Thread-1): finished collecting timing info
+2020-06-15 23:15:54.916194 (Thread-1): On test.my_new_project.not_null_my_second_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.not_null_my_second_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+where id is null
+
+
+2020-06-15 23:15:55.887817 (Thread-1): finished collecting timing info
+2020-06-15 23:15:55.891184 (Thread-1): 16:15:55 | 2 of 4 PASS not_null_my_second_dbt_model_id.......................... [PASS in 1.02s]
+2020-06-15 23:15:55.893279 (Thread-1): Finished running node test.my_new_project.not_null_my_second_dbt_model_id
+2020-06-15 23:15:55.894485 (Thread-1): Began running node test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:15:55.896256 (Thread-1): 16:15:55 | 3 of 4 START test unique_my_first_dbt_model_id....................... [RUN]
+2020-06-15 23:15:55.900082 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_first_dbt_model_id".
+2020-06-15 23:15:55.902647 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.not_null_my_second_dbt_model_id).
+2020-06-15 23:15:55.903980 (Thread-1): Compiling test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:15:55.930827 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_first_dbt_model_id"
+2020-06-15 23:15:55.931383 (Thread-1): finished collecting timing info
+2020-06-15 23:15:55.932036 (Thread-1): On test.my_new_project.unique_my_first_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.unique_my_first_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        id
+
+    from `mlab-recreate`.`dbt_pipeline_deposit`.`my_first_dbt_model`
+    where id is not null
+    group by id
+    having count(*) > 1
+
+) validation_errors
+
+
+2020-06-15 23:15:56.912918 (Thread-1): finished collecting timing info
+2020-06-15 23:15:56.915985 (Thread-1): 16:15:56 | 3 of 4 PASS unique_my_first_dbt_model_id............................. [PASS in 1.02s]
+2020-06-15 23:15:56.917073 (Thread-1): Finished running node test.my_new_project.unique_my_first_dbt_model_id
+2020-06-15 23:15:56.919682 (Thread-1): Began running node test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:15:56.921998 (Thread-1): 16:15:56 | 4 of 4 START test unique_my_second_dbt_model_id...................... [RUN]
+2020-06-15 23:15:56.925050 (Thread-1): Acquiring new bigquery connection "test.my_new_project.unique_my_second_dbt_model_id".
+2020-06-15 23:15:56.925640 (Thread-1): Re-using an available connection from the pool (formerly test.my_new_project.unique_my_first_dbt_model_id).
+2020-06-15 23:15:56.926139 (Thread-1): Compiling test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:15:56.943115 (Thread-1): Writing injected SQL for node "test.my_new_project.unique_my_second_dbt_model_id"
+2020-06-15 23:15:56.943624 (Thread-1): finished collecting timing info
+2020-06-15 23:15:56.944203 (Thread-1): On test.my_new_project.unique_my_second_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "test.my_new_project.unique_my_second_dbt_model_id"} */
+
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        id
+
+    from `mlab-recreate`.`dbt_pipeline_deposit`.`my_second_dbt_model`
+    where id is not null
+    group by id
+    having count(*) > 1
+
+) validation_errors
+
+
+2020-06-15 23:15:58.041423 (Thread-1): finished collecting timing info
+2020-06-15 23:15:58.044943 (Thread-1): 16:15:58 | 4 of 4 PASS unique_my_second_dbt_model_id............................ [PASS in 1.12s]
+2020-06-15 23:15:58.045887 (Thread-1): Finished running node test.my_new_project.unique_my_second_dbt_model_id
+2020-06-15 23:15:58.076841 (MainThread): Acquiring new bigquery connection "master".
+2020-06-15 23:15:58.077201 (MainThread): Opening a new connection, currently in state closed
+2020-06-15 23:15:58.077871 (MainThread): 16:15:58 | 
+2020-06-15 23:15:58.078206 (MainThread): 16:15:58 | Finished running 4 tests in 5.80s.
+2020-06-15 23:15:58.079821 (MainThread): Connection 'master' was properly closed.
+2020-06-15 23:15:58.080176 (MainThread): Connection 'test.my_new_project.unique_my_second_dbt_model_id' was left open.
+2020-06-15 23:15:58.102361 (MainThread): 
+2020-06-15 23:15:58.102638 (MainThread): Completed with 1 error and 0 warnings:
+2020-06-15 23:15:58.102858 (MainThread): 
+2020-06-15 23:15:58.103076 (MainThread): Failure in test not_null_my_first_dbt_model_id (models/example/schema.yml)
+2020-06-15 23:15:58.103251 (MainThread):   Got 1 result, expected 0.
+2020-06-15 23:15:58.103520 (MainThread): 
+2020-06-15 23:15:58.103854 (MainThread):   compiled SQL at target/compiled/my_new_project/models/example/schema.yml/schema_test/not_null_my_first_dbt_model_id.sql
+2020-06-15 23:15:58.104154 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+2020-06-15 23:15:58.104581 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79ec69dc6cc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79ec69d51400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79ec69d51080>]}
+2020-06-15 23:15:58.105053 (MainThread): Flushing usage events
